@@ -12,6 +12,7 @@ var uglify = require('gulp-uglify');
 
 var imagemin = require('gulp-imagemin');
 var jpegtran = require('imagemin-jpegtran');
+var gm = require('gulp-gm');
 var imageResize = require('gulp-image-resize');
 
 var paths = {
@@ -50,11 +51,11 @@ gulp.task('js', function() {
 
 gulp.task('img', function() {
     return gulp.src(paths.images)
-        .pipe(imageResize({
-            width: 720,
-            upscale: false,
-            gravity: 'center',
-            format: 'jpg',
+        .pipe(gm(function(file) {
+            return file
+                .gravity('Center')
+                .resize(720)
+                .blur(100);
         }))
         .pipe(imagemin({
             progressive: true,
