@@ -1,0 +1,49 @@
+// Liste des différents background disponibles
+$background-list: 
+    fate-stay-night-1 
+    hatsune-miku-1 hatsune-miku-2 
+    no-game-no-life-1 no-game-no-life-2 
+    shingeki-no-kyojin-1 shingeki-no-kyojin-2 
+    sword-art-online-1 sword-art-online-2
+    tokyo-ghoul-1 tokyo-ghoul-2 tokyo-ghoul-3;
+
+@each $background in $background-list {
+    html.#{$background} #wallpaper {
+        background-image: url(../img/#{$background}.jpg);
+    }
+}
+
+body {
+    background: #000;
+    font-family: "DejaVu Sans Mono", monospace;
+    line-height: 1.7em;
+}
+
+#wallpaper {
+    position: fixed;
+    z-index: -1;
+
+    $offset: 0;
+    left: $offset; top: $offset; right: $offset; bottom: $offset;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .5;
+}
+
+h1, .tile {
+    $bg: rgba(0, 0, 0, .4);
+    background: $bg;
+    box-shadow: 0 0 30px $bg;
+    border: 1px solid rgba($bg, .2);
+    color: #EFEFEF;
+    text-shadow: 1px 1px #000;
+
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    word-break: normal;
+}
+
+.tile a {
+    color: inherit;
+}

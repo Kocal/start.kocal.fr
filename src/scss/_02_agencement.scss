@@ -1,0 +1,48 @@
+$gutter: 30px;
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center
+}
+
+h1, h2 {
+    margin: 0 0 $gutter 0;
+}
+
+#header {
+    flex: 100%;
+}
+
+h1 {
+    display: inline-block;
+    padding: $gutter;
+}
+
+.tile {
+    padding: $gutter;
+    margin: $gutter $gutter 0 0;
+
+    &:last-of-type {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 500px), (max-device-width: 500px) {
+    body {
+        padding: 0;
+    }
+
+    .tile {
+        margin: 0;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .tile {
+        margin-bottom: $gutter / 2;
+        width: 100%
+    }
+}
