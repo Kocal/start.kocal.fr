@@ -1,5 +1,30 @@
 <?php
     $shortcuts = [
+
+        'internet' => [
+            'twitter'   => 'https://tweetdeck.twitter.com',
+            'facebook'  => 'https://www.facebook.com',
+            'eclypsia'  => 'http://www.eclypsia.com/fr/ectv2',
+            'youtube'   => 'https://www.youtube.com',
+            'twitch'    => 'http://www.twitch.tv/directory/game/League of Legends',
+            'hiddenlol' => 'http://hiddenlol.com',
+            'hugelol'   => 'http://hugelol.com',
+        ],
+
+        'tech' => [
+            'korben.info'    => 'https://korben.info', 
+            'developpez.net' => 'http://www.developpez.com',
+            'numerama.com'   => 'http://www.numerama.com',
+            'thenews.im'     => 'http://thenews.im',
+        ],
+
+        'iut' => [
+            'home' => 'http://iut.univ-lyon1.fr',
+            'mail' => 'https://accesbv.univ-lyon1.fr/owa',
+            'spiral' => 'http://spiralconnect.univ-lyon1.fr',
+            'edt' => 'http://edt.jordan-martin.fr/bqd'
+        ],        
+        
         '4chan' => [
             '/a/' => 'https://boards.4chan.org/a',
             '/b/' => 'https://boards.4chan.org/b',
@@ -11,23 +36,6 @@
             '/r/programmerhumor'      => 'https://www.reddit.com/r/programmerhumor',
             '/r/talesfromtechsupport' => 'https://www.reddit.com/r/talesfromtechsupport',
         ],
-
-        'tech' => [
-            'korben.info'    => 'https://korben.info', 
-            'developpez.net' => 'http://www.developpez.com',
-            'numerama.com'   => 'http://www.numerama.com',
-            'thenews.im'     => 'http://thenews.im',
-        ],
-
-        'internet' => [
-            'twitter'   => 'https://tweetdeck.twitter.com',
-            'facebook'  => 'https://www.facebook.com',
-            'eclypsia'  => 'http://www.eclypsia.com/fr/ectv2',
-            'youtube'   => 'https://www.youtube.com',
-            'twitch'    => 'http://www.twitch.tv/directory/game/League of Legends',
-            'hiddenlol' => 'http://hiddenlol.com',
-            'hugelol'   => 'http://hugelol.com',
-        ]
     ];
 ?>
 <!DOCTYPE html>
@@ -35,9 +43,11 @@
     <head>
         <title>start.kocal.fr</title>
         <link rel="stylesheet" href="css/style.min.css">
+        <meta name="viewport" content="width=content-width, initial-scale=1, maximum-scale=1">
     </head>
     <body>
-        <h1>start.kocal.fr</h1>
+        <div id="wallpaper"></div>
+        <div id="header"><h1>start.kocal.fr</h1></div>
         <?php foreach($shortcuts as $title => $urls): ?>
             <div class="tile">
                 <h2><?=$title?></h2>
