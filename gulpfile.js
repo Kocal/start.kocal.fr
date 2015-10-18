@@ -1,5 +1,7 @@
 var gulp = require('gulp');
 var debug = require('gulp-debug');
+var runSequence = require('run-sequence');
+var del = require('del');
 
 var php2html = require('gulp-php2html');
 var mimifyHtml = require('gulp-minify-html');
@@ -19,14 +21,18 @@ var paths = {
     php: './src/**/*.php',
     styles: ['./src/scss/*.scss', './src/scss/*.css'],
     scripts: ['./src/js/*.coffee', './src/js/*.js'],
-    images: ['./src/img/*']
+    images: ['./src/img/*'],
+    toMove: ['./src/.htaccess']
 };
+
+gulp.task('clean', function(cb) {
+    return del('./public', cb);
+});
 
 gulp.task('php', function() {
     return gulp.src(paths.php)
-        .pipe(php2html({
-            verbose: true
-        }))
+        .pipe(debug({title: 'php: '}))    
+        .pipe(php2html())
         .pipe(mimifyHtml())
         .pipe(gulp.dest('./public/'));
 });
@@ -51,6 +57,7 @@ gulp.task('js', function() {
 
 gulp.task('img', function() {
     return gulp.src(paths.images)
+        .pipe(debug({title: 'img: '}))    
         .pipe(gm(function(file) {
             return file
                 .gravity('Center')
@@ -64,11 +71,22 @@ gulp.task('img', function() {
         .pipe(gulp.dest('./public/img/'));
 });
 
+gulp.task('move', function() {
+    return gulp.src(paths.toMove)
+        .pipe(debug({title: 'move: '}))
+        .pipe(gulp.dest('./public/'))
+});
+
 gulp.task('watch', function() {
     gulp.watch(paths.php, ['php']);
     gulp.watch(paths.styles, ['css']);
     gulp.watch(paths.scripts, ['js']);
     gulp.watch(paths.images, ['img'])
+    gulp.watch(paths.toMove, ['move']);
 })
 
-gulp.task('default', ['watch', 'php', 'css', 'js', 'img']);
+gulp.task('default', function(cb) {
+    runSequence('clean', 'php', 'css', 'js', 'img', 'move', 'watch');
+})
+
+// gulp.task('default', ['watch', 'php', 'css', 'js', 'img', 'move']);
