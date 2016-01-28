@@ -61,6 +61,6 @@
         <?php endforeach; ?>
         </div> 
 
-        <script src="js/app.min.js?t="<?= time() ?>></script>
+        <script src="js/app.min.js?t=<?= time() ?>"></script>
     </body>
 </html>
