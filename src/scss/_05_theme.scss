@@ -8,41 +8,52 @@ $background-list:
     tokyo-ghoul-1 tokyo-ghoul-2 tokyo-ghoul-3;
 
 @each $background in $background-list {
-    html.#{$background} #wallpaper {
+    html.#{$background} body {
         background-image: url(../img/#{$background}.jpg);
     }
 }
 
 body {
-    background: #000;
-    font-family: "DejaVu Sans Mono", monospace;
-    line-height: 1.7em;
+    font-family: Roboto, sans-serif;
+    background-size: cover;
 }
 
-#wallpaper {
+#overlay {
+    background: rgba(#000, .7);
     position: fixed;
     z-index: -1;
-
-    $offset: 0;
-    left: $offset; top: $offset; right: $offset; bottom: $offset;
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: .5;
+    left: 0; top: 0; right: 0; bottom: 0;
 }
 
-h1, .tile {
-    $bg: rgba(0, 0, 0, .4);
-
-    background: $bg;
-    box-shadow: 0 0 50px $bg, inset 0 0 50px $bg;
-    border: 1px solid $bg;
-    color: #EFEFEF;
-    text-shadow: 1px 1px #000;
-    border-radius: 10px;
+.tile {
+    background: #fff;
+    display: inline-block;
+    margin: 8px;
+    padding-bottom: 8px;
+    vertical-align: top;
     text-align: center;
+    min-width: 130px;
 }
 
-.tile a {
-    color: inherit;
+.tile__header {
+    font-weight: 500;
+    font-size: 18px;
+    padding: 16px;
+}
+
+.tile__content {
+
+}
+
+.tile__content a {
+    display: block;
+    padding: 8px 16px;
+    color: rgb(20,20,20);
+    text-decoration: none;
+
+    transition: .2s all;
+
+    &:hover {
+        background-color: rgba(#000, .2)
+    }
 }

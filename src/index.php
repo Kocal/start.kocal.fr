@@ -1,6 +1,5 @@
 <?php
     $shortcuts = [
-
         'internet' => [
             'twitter'   => 'https://tweetdeck.twitter.com',
             'facebook'  => 'https://www.facebook.com',
@@ -41,21 +40,27 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
+        <meta charset="utf-8">
         <title>start.kocal.fr</title>
-        <link rel="stylesheet" href="css/style.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/style.min.css?t=<?= time() ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     </head>
     <body>
-        <div id="wallpaper"></div>
+        <div id="overlay"></div>
+        <div id="tiles-container">
         <?php foreach($shortcuts as $title => $urls): ?>
             <div class="tile">
-                <h2><?=$title?></h2>
-                <?php foreach($urls as $text => $url): ?>
-                    <a href="<?=$url?>"><?=$text?></a><br>
-                <?php endforeach; ?>
+                <header class="tile__header"><?= $title ?></header>
+                <section class="tile__content">  
+                    <?php foreach($urls as $text => $url): ?>
+                        <a href="<?=$url?>"><?=$text?></a>
+                    <?php endforeach; ?>
+                </section>
             </div>
         <?php endforeach; ?>
+        </div> 
 
-        <script src="js/app.min.js"></script>
+        <script src="js/app.min.js?t="<?= time() ?>></script>
     </body>
 </html>

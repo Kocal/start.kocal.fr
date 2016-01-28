@@ -79,8 +79,8 @@ gulp.task('move', function() {
 
 gulp.task('watch', function() {
     gulp.watch(paths.php, ['php']);
-    gulp.watch(paths.styles, ['css']);
-    gulp.watch(paths.scripts, ['js']);
+    gulp.watch(paths.styles, ['php', 'css']);
+    gulp.watch(paths.scripts, ['php', 'js']);
     gulp.watch(paths.images, ['img'])
     gulp.watch(paths.toMove, ['move']);
 })
