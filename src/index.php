@@ -43,11 +43,10 @@
     <head>
         <title>start.kocal.fr</title>
         <link rel="stylesheet" href="css/style.min.css">
-        <meta name="viewport" content="width=content-width, initial-scale=1, maximum-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     </head>
     <body>
         <div id="wallpaper"></div>
-        <div id="header"><h1>start.kocal.fr</h1></div>
         <?php foreach($shortcuts as $title => $urls): ?>
             <div class="tile">
                 <h2><?=$title?></h2>
