@@ -33,15 +33,14 @@ body {
 
 h1, .tile {
     $bg: rgba(0, 0, 0, .4);
+
     background: $bg;
-    box-shadow: 0 0 30px $bg;
-    border: 1px solid rgba($bg, .2);
+    box-shadow: 0 0 50px $bg, inset 0 0 50px $bg;
+    border: 1px solid $bg;
     color: #EFEFEF;
     text-shadow: 1px 1px #000;
-
-    overflow-x: hidden;
-    text-overflow: ellipsis;
-    word-break: normal;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .tile a {
