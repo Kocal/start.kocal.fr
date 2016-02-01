@@ -21,7 +21,8 @@
             'home' => 'http://iut.univ-lyon1.fr',
             'mail' => 'https://accesbv.univ-lyon1.fr/owa',
             'spiral' => 'http://spiralconnect.univ-lyon1.fr',
-            'edt' => 'http://edt.jordan-martin.fr/bqd'
+            'edt' => 'http://edt.jordan-martin.fr/ann',
+            'notes' => 'http://iut.univ-lyon1.fr/campus/espace-etudiant/etudiants-iut-affichage-des-notes-provisoires-737383.kjsp'
         ],        
         
         '4chan' => [
