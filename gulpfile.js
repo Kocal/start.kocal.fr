@@ -22,7 +22,7 @@ var paths = {
     styles: ['./src/scss/*.scss', './src/scss/*.css'],
     scripts: ['./src/js/*.coffee', './src/js/*.js'],
     images: ['./src/img/*'],
-    toMove: ['./src/.htaccess']
+    toMove: ['./src/.htaccess', './src/manifest.appcache']
 };
 
 gulp.task('clean', function(cb) {

@@ -45,12 +45,12 @@
     ];
 ?>
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" manifest="manifest.appcache">
     <head>
         <meta charset="utf-8">
         <title>start.kocal.fr</title>
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/style.min.css?t=<?= time() ?>">
+        <link rel="stylesheet" href="css/style.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     </head>
     <body>
@@ -68,6 +68,6 @@
         <?php endforeach; ?>
         </div> 
 
-        <script src="js/app.min.js?t=<?= time() ?>"></script>
+        <script src="js/app.min.js"></script>
     </body>
 </html>
