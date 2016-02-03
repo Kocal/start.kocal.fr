@@ -17,6 +17,12 @@
             'thenews.im'     => 'http://thenews.im',
         ],
 
+        'mail' => [
+            'outlook' => 'https://outlook.com',
+            'gmail' => 'https://gmail.com',
+            'iut' => 'http://accesbv.univ-lyon1.fr/owa'
+        ],
+
         'iut' => [
             'home' => 'http://iut.univ-lyon1.fr',
             'mail' => 'https://accesbv.univ-lyon1.fr/owa',
