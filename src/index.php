@@ -11,7 +11,7 @@
         ],
 
         'tech' => [
-            'korben.info'    => 'https://korben.info', 
+            'korben.info'    => 'https://korben.info',
             'developpez.net' => 'http://www.developpez.com',
             'numerama.com'   => 'http://www.numerama.com',
             'thenews.im'     => 'http://thenews.im',
@@ -29,8 +29,8 @@
             'spiral' => 'http://spiralconnect.univ-lyon1.fr',
             'edt' => 'http://edt.jordan-martin.fr/ann',
             'notes' => 'http://iut.univ-lyon1.fr/campus/espace-etudiant/etudiants-iut-affichage-des-notes-provisoires-737383.kjsp'
-        ],        
-        
+        ],
+
         '4chan' => [
             '/a/' => 'https://boards.4chan.org/a',
             '/b/' => 'https://boards.4chan.org/b',
@@ -42,6 +42,11 @@
             '/r/programmerhumor'      => 'https://www.reddit.com/r/programmerhumor',
             '/r/talesfromtechsupport' => 'https://www.reddit.com/r/talesfromtechsupport',
         ],
+
+        'lol (Konata Izumi)' => [
+            'op.gg' => 'http://euw.op.gg/summoner/userName=Konata+Izumi',
+            'lolking' => 'http://www.lolking.net/summoner/euw/30827817'
+        ]
     ];
 ?>
 <!DOCTYPE html>
@@ -56,17 +61,19 @@
     <body>
         <div id="overlay"></div>
         <div id="tiles-container">
+        <?php ksort($shortcuts); ?>
         <?php foreach($shortcuts as $title => $urls): ?>
             <div class="tile">
                 <header class="tile__header"><?= $title ?></header>
-                <section class="tile__content">  
+                <section class="tile__content">
+                    <?php ksort($urls); ?>
                     <?php foreach($urls as $text => $url): ?>
                         <a href="<?=$url?>"><?=$text?></a>
                     <?php endforeach; ?>
                 </section>
             </div>
         <?php endforeach; ?>
-        </div> 
+        </div>
 
         <script src="js/app.min.js"></script>
     </body>
