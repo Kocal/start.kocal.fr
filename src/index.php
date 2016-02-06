@@ -46,6 +46,12 @@
         'lol (Konata Izumi)' => [
             'op.gg' => 'http://euw.op.gg/summoner/userName=Konata+Izumi',
             'lolking' => 'http://www.lolking.net/summoner/euw/30827817'
+        ],
+
+        'kocal' => [
+            'seedbox' => 'https://kocal.fr/seedbox/',
+            'ui' => 'https://kocal.fr/ui',
+            'start' => 'https://kocal.fr/start'  
         ]
     ];
 ?>
