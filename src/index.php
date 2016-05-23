@@ -49,8 +49,7 @@
         ],
 
         'kocal' => [
-            'seedbox' => 'https://kocal.fr/seedbox/',
-            'ui' => 'https://kocal.fr/ui',
+            'seedbox' => 'https://seedbox.kocal.fr',
             'start' => 'https://kocal.fr/start'  
         ]
     ];

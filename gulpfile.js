@@ -83,10 +83,10 @@ gulp.task('watch', function() {
     gulp.watch(paths.scripts, ['php', 'js']);
     gulp.watch(paths.images, ['img'])
     gulp.watch(paths.toMove, ['move']);
-})
+});
 
 gulp.task('default', function(cb) {
-    runSequence('clean', 'php', 'css', 'js', 'img', 'move', 'watch');
-})
+    runSequence('clean', 'php', 'css', 'js', 'img', 'move');
+});
 
 // gulp.task('default', ['watch', 'php', 'css', 'js', 'img', 'move']);
