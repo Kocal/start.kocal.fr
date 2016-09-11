@@ -45,7 +45,8 @@
 
         'lol (Konata Izumi)' => [
             'op.gg' => 'http://euw.op.gg/summoner/userName=Konata+Izumi',
-            'lolking' => 'http://www.lolking.net/summoner/euw/30827817'
+            'lolking' => 'http://www.lolking.net/summoner/euw/30827817',
+            'champ. masteries' => 'http://championmasterylookup.derpthemeus.com/summoner/?summoner=Konata%20Izumi&region=EUW'
         ],
 
         'kocal' => [
