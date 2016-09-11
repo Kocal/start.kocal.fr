@@ -3,6 +3,8 @@ var debug = require('gulp-debug');
 var runSequence = require('run-sequence');
 var del = require('del');
 
+var replace = require('gulp-replace')
+
 var php2html = require('gulp-php2html');
 var mimifyHtml = require('gulp-minify-html');
 
@@ -74,6 +76,7 @@ gulp.task('img', function() {
 gulp.task('move', function() {
     return gulp.src(paths.toMove)
         .pipe(debug({title: 'move: '}))
+        .pipe(replace('{DATE}', new Date().toISOString().slice(0, 10)))
         .pipe(gulp.dest('./public/'))
 });
 
