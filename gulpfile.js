@@ -76,7 +76,7 @@ gulp.task('img', function() {
 gulp.task('move', function() {
     return gulp.src(paths.toMove)
         .pipe(debug({title: 'move: '}))
-        .pipe(replace('{DATE}', new Date().toISOString().slice(0, 10)))
+        .pipe(replace('{DATE}', new Date().toISOString()))
         .pipe(gulp.dest('./public/'))
 });
 
