@@ -35,6 +35,7 @@
             '/a/' => 'https://boards.4chan.org/a',
             '/b/' => 'https://boards.4chan.org/b',
             '/g/' => 'https://boards.4chan.org/g',
+            '/pol/' => 'https://boards.4chan.org/pol'
         ],
 
         'reddit' => [
