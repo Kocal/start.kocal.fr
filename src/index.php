@@ -52,6 +52,13 @@
         'kocal' => [
             'seedbox' => 'https://seedbox.kocal.fr',
             'start' => 'https://kocal.fr/start'  
+        ],
+
+        'e-shop' => [
+            'amazon' => 'https://www.amazon.fr/',
+            'ebay' => 'http://www.ebay.fr/',
+            'dx' => 'http://www.dx.com/',
+            'aliexpress' => 'https://fr.aliexpress.com',
         ]
     ];
 ?>
