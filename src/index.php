@@ -28,7 +28,8 @@
             'mail' => 'https://accesbv.univ-lyon1.fr/owa',
             'spiral' => 'http://spiralconnect.univ-lyon1.fr',
             'edt' => 'http://edt.jordan-martin.fr/bxr',
-            'notes' => 'http://iut.univ-lyon1.fr/campus/espace-etudiant/etudiants-iut-affichage-des-notes-provisoires-737383.kjsp'
+            'notes' => 'http://iut.univ-lyon1.fr/campus/espace-etudiant/etudiants-iut-affichage-des-notes-provisoires-737383.kjsp',
+            'slack' => 'https://infobourg.slack.com/messages/general/'
         ],
 
         '4chan' => [
