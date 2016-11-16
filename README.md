@@ -1,9 +1,34 @@
-# start
-Ma page d'accueil perso. https://kocal.fr/start/
+start-page
+==========
+Live: https://kocal.fr/start/
 
-## Installation
+Dependencies
+------------
+
+GraphicsMagick library should be installed on your system.
+
 ```bash
-$ git clone [...]
+# apt-get install graphicsmagick
+```
+
+Installation
+------------
+```bash
 $ npm install
-$ gulp
+$ npm i -g gulp
+```
+
+Usage
+-----
+
+Build the project that which will be located in `public/` folder:
+
+```bash
+$ gulp 
+```
+
+Watch any PHP, CSS or JS modifications, then build the project:
+
+```bash
+$ gulp watch
 ```
