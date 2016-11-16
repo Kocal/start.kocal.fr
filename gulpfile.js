@@ -66,7 +66,7 @@ gulp.task('js', function () {
     .pipe(debug({title: 'js: '}))
     .pipe(uglify())
     .pipe(concat('app.min.js'))
-    .pipe(gulp.dest(distPaths.styles))
+    .pipe(gulp.dest(distPaths.scripts))
 })
 
 gulp.task('img', function () {
