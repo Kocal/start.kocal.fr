@@ -68,7 +68,7 @@ gulp.task('img', function () {
       return file
         .gravity('Center')
         .resize(720)
-        .blur(40)
+        .blur(100)
     }))
     .pipe(imagemin({
       progressive: true,
