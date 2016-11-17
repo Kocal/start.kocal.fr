@@ -70,7 +70,7 @@
         <meta charset="utf-8">
         <title>start.kocal.fr</title>
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/app.css">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     </head>
     <body>

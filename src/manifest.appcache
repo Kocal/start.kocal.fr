@@ -2,8 +2,9 @@ CACHE MANIFEST
 # Update {DATE}
 
 CACHE:
-css/style.min.css
-js/app.min.js
+index.html
+css/app.css
+js/app.js
 img/no-game-no-life-2.jpg
 img/shingeki-no-kyojin-2.jpg
 img/sword-art-online-1.jpg
@@ -16,7 +17,6 @@ img/tokyo-ghoul-2.jpg
 img/hatsune-miku-2.jpg
 img/no-game-no-life-1.jpg
 img/hatsune-miku-1.jpg
-index.html
 
 NETWORK:
 *
