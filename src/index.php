@@ -53,7 +53,7 @@
 
         'kocal' => [
             'seedbox' => 'https://seedbox.kocal.fr',
-            'start' => 'https://kocal.fr/start'  
+            'start' => 'https://kocal.fr/start'
         ],
 
         'e-shop' => [
@@ -75,7 +75,7 @@
     </head>
     <body>
         <div id="overlay"></div>
-        <div id="tiles-container">
+        <div class="tiles-container">
         <?php ksort($shortcuts); ?>
         <?php foreach($shortcuts as $title => $urls): ?>
             <div class="tile">
@@ -83,7 +83,7 @@
                 <section class="tile__content">
                     <?php ksort($urls); ?>
                     <?php foreach($urls as $text => $url): ?>
-                        <a href="<?=$url?>"><?=$text?></a>
+                        <a class="tile__item" href="<?= $url ?>"><?= $text ?></a>
                     <?php endforeach; ?>
                 </section>
             </div>

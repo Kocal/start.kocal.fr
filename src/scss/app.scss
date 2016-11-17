@@ -1,5 +1,24 @@
-@import "01_base";
-@import "02_agencement";
-@import "03_modules";
-@import "04_etats";
-@import "05_theme";
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  color: #333;
+  line-height: 1.6;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-size: cover;
+}
+
+#overlay {
+  position: fixed;
+  z-index: -1;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-color: rgba(#000, .4);
+}
+
+@import "tiles";
