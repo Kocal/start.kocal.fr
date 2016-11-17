@@ -20,8 +20,8 @@ var gm = require('gulp-gm')
 
 var srcPaths = {
   php: './src/**/*.php',
-  styles: ['./src/scss/*.scss', './src/scss/*.css'],
-  scripts: ['./src/js/*.coffee', './src/js/*.js'],
+  styles: ['./src/scss/app.scss'],
+  scripts: ['./src/js/*.js'],
   images: ['./src/img/*'],
   cache: ['./src/manifest.appcache']
 }
