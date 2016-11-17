@@ -1,18 +1,3 @@
-// Liste des différents background disponibles
-$background-list: 
-    fate-stay-night-1 
-    hatsune-miku-1 hatsune-miku-2 
-    no-game-no-life-1 no-game-no-life-2 
-    shingeki-no-kyojin-1 shingeki-no-kyojin-2 
-    sword-art-online-1 sword-art-online-2
-    tokyo-ghoul-1 tokyo-ghoul-2 tokyo-ghoul-3;
-
-@each $background in $background-list {
-    html.#{$background} body {
-        background-image: url(../img/#{$background}.jpg);
-    }
-}
-
 body {
     font-family: Roboto, sans-serif;
     background-size: cover;
@@ -41,7 +26,7 @@ body {
 
 @media screen and (max-width: 600px) {
     body { align-items: initial; }
-    .tile { 
+    .tile {
         margin-bottom: 0;
         max-width: initial;
         width: calc(50% - 2 * 8px);
