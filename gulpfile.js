@@ -93,11 +93,11 @@ gulp.task('cache', function () {
 })
 
 gulp.task('watch', function () {
-  gulp.watch(srcPaths.php, ['php'])
-  gulp.watch(srcPaths.styles, ['php', 'css'])
-  gulp.watch(srcPaths.scripts, ['php', 'js'])
-  gulp.watch(srcPaths.images, ['img'])
-  gulp.watch(srcPaths.cache, ['move'])
+  gulp.watch(srcPaths.php, ['php', 'cache'])
+  gulp.watch(srcPaths.styles, ['css', 'cache'])
+  gulp.watch(srcPaths.scripts, ['js', 'cache'])
+  gulp.watch(srcPaths.images, ['img', 'cache'])
+  gulp.watch(srcPaths.cache, ['cache'])
 })
 
 gulp.task('default', function () {
