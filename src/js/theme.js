@@ -1,4 +1,4 @@
-const backgrounds = [
+;const backgrounds = [
   {name: 'fate-stay-night', max: 1},
   {name: 'hatsune-miku', max: 2},
   {name: 'no-game-no-life', max: 2},
@@ -10,7 +10,7 @@ const backgrounds = [
 function pickRandomBackground (backgrounds) {
   const background = backgrounds [Math.floor(Math.random() * backgrounds.length)]
   const {name, max} = background
-  
+
   return name + '-' + Math.floor(Math.random() * max + 1)
 }
 
