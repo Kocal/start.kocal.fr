@@ -9,14 +9,9 @@ var concat = require('gulp-concat')
 
 // PHP & HTML
 var php2html = require('gulp-php2html')
-var mimifyHtml = require('gulp-minify-html')
 
 // CSS & Sass
-var minifyCss = require('gulp-minify-css')
 var sass = require('gulp-sass')
-
-// JS
-var uglify = require('gulp-uglify')
 
 // Images
 var imagemin = require('gulp-imagemin')
@@ -47,7 +42,6 @@ gulp.task('php', function () {
   return gulp.src(srcPaths.php)
     .pipe(debug({title: 'php: '}))
     .pipe(php2html())
-    .pipe(mimifyHtml())
     .pipe(gulp.dest(distPaths.php))
 })
 
@@ -56,16 +50,14 @@ gulp.task('css', function () {
     .pipe(debug({title: 'css: '}))
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(sass())
-    .pipe(minifyCss())
-    .pipe(concat('style.min.css'))
+    .pipe(concat('app.css'))
     .pipe(gulp.dest(distPaths.styles))
 })
 
 gulp.task('js', function () {
   return gulp.src(srcPaths.scripts)
     .pipe(debug({title: 'js: '}))
-    .pipe(uglify())
-    .pipe(concat('app.min.js'))
+    .pipe(concat('app.js'))
     .pipe(gulp.dest(distPaths.scripts))
 })
 
