@@ -20,8 +20,8 @@ var gm = require('gulp-gm')
 
 var srcPaths = {
   php: './src/**/*.php',
-  styles: ['./src/scss/app.scss'],
-  scripts: ['./src/js/*.js'],
+  styles: ['./src/scss/**/*.scss'],
+  scripts: ['./src/js/**/*.js'],
   images: ['./src/img/*'],
   cache: ['./src/manifest.appcache']
 }
@@ -46,7 +46,7 @@ gulp.task('php', function () {
 })
 
 gulp.task('css', function () {
-  return gulp.src(srcPaths.styles)
+  return gulp.src('./src/scss/app.scss')
     .pipe(debug({title: 'css: '}))
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(sass())
