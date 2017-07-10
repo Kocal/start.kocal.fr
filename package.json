@@ -37,5 +37,8 @@
     "imagemin-jpegtran": "^5.0.2",
     "run-sequence": "^2.0.0",
     "susy": "^3.0.0"
+  },
+  "scripts": {
+    "build": "gulp"
   }
 }
