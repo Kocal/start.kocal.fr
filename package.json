@@ -23,19 +23,19 @@
   },
   "homepage": "https://github.com/Kocal/start#readme",
   "devDependencies": {
-    "del": "^2.0.2",
+    "del": "^3.0.0",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
-    "gulp-debug": "^2.1.2",
+    "gulp-debug": "^3.1.0",
     "gulp-gm": "0.0.8",
-    "gulp-image-resize": "^0.7.0",
-    "gulp-imagemin": "^2.3.0",
-    "gulp-php2html": "^0.2.0",
-    "gulp-replace": "^0.5.4",
-    "gulp-sass": "^2.0.4",
-    "gulp-sourcemaps": "^1.6.0",
-    "imagemin-jpegtran": "^4.3.1",
-    "run-sequence": "^1.1.4",
-    "susy": "^2.2.6"
+    "gulp-image-resize": "^0.12.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-php2html": "^0.3.2",
+    "gulp-replace": "^0.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "imagemin-jpegtran": "^5.0.2",
+    "run-sequence": "^2.0.0",
+    "susy": "^3.0.0"
   }
 }
