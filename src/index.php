@@ -3,7 +3,6 @@
         'internet' => [
             'twitter'   => 'https://tweetdeck.twitter.com',
             'facebook'  => 'https://www.facebook.com',
-            'eclypsia'  => 'http://www.eclypsia.com/fr/ectv2',
             'youtube'   => 'https://www.youtube.com',
             'twitch'    => 'http://www.twitch.tv/directory/game/League of Legends',
             'hiddenlol' => 'http://hiddenlol.com',
@@ -23,15 +22,6 @@
             'iut' => 'http://accesbv.univ-lyon1.fr/owa'
         ],
 
-        'iut' => [
-            'home' => 'http://iut.univ-lyon1.fr',
-            'mail' => 'https://accesbv.univ-lyon1.fr/owa',
-            'spiral' => 'http://spiralconnect.univ-lyon1.fr',
-            'edt' => 'http://edt.jordan-martin.fr/bxr',
-            'notes' => 'http://iut.univ-lyon1.fr/campus/espace-etudiant/etudiants-iut-affichage-des-notes-provisoires-737383.kjsp',
-            'slack' => 'https://infobourg.slack.com/messages/general/'
-        ],
-
         '4chan' => [
             '/a/' => 'https://boards.4chan.org/a',
             '/b/' => 'https://boards.4chan.org/b',
@@ -44,20 +34,7 @@
             '/r/programmerhumor'      => 'https://www.reddit.com/r/programmerhumor',
             '/r/talesfromtechsupport' => 'https://www.reddit.com/r/talesfromtechsupport',
         ],
-
-        'lol' => [
-            'op.gg Konata Izumi' => 'http://euw.op.gg/summoner/userName=Konata+Izumi',
-            'op.gg Sardou71' => 'http://euw.op.gg/summoner/userName=Sardou71',
-            'op.gg samnvg' => 'http://euw.op.gg/summoner/userName=samnvg',
-            'lolking' => 'http://www.lolking.net/summoner/euw/30827817',
-            'champ. masteries' => 'http://championmasterylookup.derpthemeus.com/summoner/?summoner=Konata%20Izumi&region=EUW'
-        ],
-
-        'kocal' => [
-            'seedbox' => 'https://seedbox.kocal.fr',
-            'start' => 'https://kocal.fr/start'
-        ],
-
+        
         'e-shop' => [
             'amazon' => 'https://www.amazon.fr/',
             'ebay' => 'http://www.ebay.fr/',
