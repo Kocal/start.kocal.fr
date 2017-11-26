@@ -1,34 +1,32 @@
-start-page
-==========
-Live: https://kocal.fr/start/
+start.kocal.fr
+==============
 
 Dependencies
 ------------
 
-GraphicsMagick library should be installed on your system.
-
 ```bash
-# apt-get install graphicsmagick
+# apt-get install graphicsmagick php-chi
 ```
 
 Installation
 ------------
+
 ```bash
-$ npm install
-$ npm i -g gulp
+$ yarn
 ```
 
 Usage
 -----
 
-Build the project that which will be located in `public/` folder:
+### Build 
 
 ```bash
-$ gulp 
+$ yarn build 
 ```
 
-Watch any PHP, CSS or JS modifications, then build the project:
+### Watch
 
 ```bash
-$ gulp watch
+$ yarn watch
 ```
+
