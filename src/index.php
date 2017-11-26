@@ -34,15 +34,7 @@
             '/r/programmerhumor'      => 'https://www.reddit.com/r/programmerhumor',
             '/r/talesfromtechsupport' => 'https://www.reddit.com/r/talesfromtechsupport',
         ],
-
-        'lol' => [
-            'op.gg Konata Izumi' => 'http://euw.op.gg/summoner/userName=Konata+Izumi',
-            'op.gg Sardou71' => 'http://euw.op.gg/summoner/userName=Sardou71',
-            'op.gg samnvg' => 'http://euw.op.gg/summoner/userName=samnvg',
-            'lolking' => 'http://www.lolking.net/summoner/euw/30827817',
-            'champ. masteries' => 'http://championmasterylookup.derpthemeus.com/summoner/?summoner=Konata%20Izumi&region=EUW'
-        ],
-
+        
         'e-shop' => [
             'amazon' => 'https://www.amazon.fr/',
             'ebay' => 'http://www.ebay.fr/',
