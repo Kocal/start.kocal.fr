@@ -3,7 +3,6 @@
         'internet' => [
             'twitter'   => 'https://tweetdeck.twitter.com',
             'facebook'  => 'https://www.facebook.com',
-            'eclypsia'  => 'http://www.eclypsia.com/fr/ectv2',
             'youtube'   => 'https://www.youtube.com',
             'twitch'    => 'http://www.twitch.tv/directory/game/League of Legends',
             'hiddenlol' => 'http://hiddenlol.com',
