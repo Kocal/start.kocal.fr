@@ -1,27 +1,10 @@
 {
   "name": "start",
-  "version": "0.0.1",
-  "description": "Page d'accueil personnelle.",
-  "main": "gulpfile.js",
+  "private": "true",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp",
+    "watch": "gulp watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Kocal/start.git"
-  },
-  "keywords": [
-    "start",
-    "web",
-    "page",
-    "personal"
-  ],
-  "author": "Hugo ALLIAUME (Kocal)",
-  "license": "GPL-3.0",
-  "bugs": {
-    "url": "https://github.com/Kocal/start/issues"
-  },
-  "homepage": "https://github.com/Kocal/start#readme",
   "devDependencies": {
     "del": "^3.0.0",
     "gulp": "^3.9.0",
@@ -37,8 +20,5 @@
     "imagemin-jpegtran": "^5.0.2",
     "run-sequence": "^2.0.0",
     "susy": "^3.0.0"
-  },
-  "scripts": {
-    "build": "gulp"
   }
 }
