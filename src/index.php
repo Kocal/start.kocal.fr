@@ -43,11 +43,6 @@
             'champ. masteries' => 'http://championmasterylookup.derpthemeus.com/summoner/?summoner=Konata%20Izumi&region=EUW'
         ],
 
-        'kocal' => [
-            'seedbox' => 'https://seedbox.kocal.fr',
-            'start' => 'https://kocal.fr/start'
-        ],
-
         'e-shop' => [
             'amazon' => 'https://www.amazon.fr/',
             'ebay' => 'http://www.ebay.fr/',
