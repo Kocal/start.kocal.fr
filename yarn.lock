@@ -4131,9 +4131,9 @@ supports-color@^5.3.0:
   dependencies:
     has-flag "^3.0.0"
 
-susy@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/susy/-/susy-3.0.1.tgz#d8f7942911a1e16ef84dfae2db296cd2058e8b26"
+susy@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/susy/-/susy-3.0.3.tgz#15bd8b2c5fd80e668a4cd7ebe6529edf40d1f04f"
 
 svgo@^1.0.0:
   version "1.0.3"
