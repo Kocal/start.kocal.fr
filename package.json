@@ -16,7 +16,7 @@
     "gulp-php2html": "^0.3.2",
     "gulp-replace": "^0.6.1",
     "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.1",
+    "gulp-sourcemaps": "^2.6.4",
     "imagemin-jpegtran": "^5.0.2",
     "run-sequence": "^2.2.1",
     "susy": "^3.0.1"
