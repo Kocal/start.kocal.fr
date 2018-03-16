@@ -18,7 +18,7 @@
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.1",
     "imagemin-jpegtran": "^5.0.2",
-    "run-sequence": "^2.2.0",
+    "run-sequence": "^2.2.1",
     "susy": "^3.0.1"
   }
 }
