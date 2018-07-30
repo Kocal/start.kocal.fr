@@ -773,9 +773,9 @@
     eslint-plugin-vue "^4.5.0"
     launch-editor "^2.2.1"
 
-"@vue/cli-plugin-pwa@^3.0.0-rc.5":
-  version "3.0.0-rc.5"
-  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-pwa/-/cli-plugin-pwa-3.0.0-rc.5.tgz#0bbf6476b7ba2aba76c0298b24860f9ebc225029"
+"@vue/cli-plugin-pwa@^3.0.0-rc.9":
+  version "3.0.0-rc.9"
+  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-pwa/-/cli-plugin-pwa-3.0.0-rc.9.tgz#468ef899091cc1aa4026078245d98154daa0817e"
   dependencies:
     launch-editor "^2.2.1"
     workbox-webpack-plugin "^3.3.1"
