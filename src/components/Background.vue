@@ -22,6 +22,7 @@ export default {
   bottom: 0;
   left: 0;
 
+  background-size: cover;
   transition: filter 0.5s linear;
 }
 

@@ -68,7 +68,6 @@ export default {
 body {
   height: 100vh;
   margin: 0;
-  background-size: cover;
   line-height: 1.6;
   font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
