@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <background/>
     <overlay/>
     <list
       v-for="(links, title) in shortcuts"
@@ -11,25 +12,15 @@
 </template>
 
 <script>
-import { applyBackground, pickRandomBackground } from "./background";
 import List from "./components/List";
+import Background from "./components/Background";
 import Overlay from "./components/Overlay";
-
-const backgrounds = [
-  { name: "fate-stay-night", count: 1 },
-  { name: "hatsune-miku", count: 2 },
-  { name: "no-game-no-life", count: 2 },
-  { name: "shingeki-no-kyojin", count: 2 },
-  { name: "sword-art-online", count: 2 },
-  { name: "tokyo-ghoul", count: 3 }
-];
-
-applyBackground(pickRandomBackground(backgrounds));
 
 export default {
   name: "app",
   components: {
     List,
+    Background,
     Overlay
   },
   data() {
