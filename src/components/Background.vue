@@ -3,14 +3,13 @@
 </template>
 
 <script>
-
-import { applyBackground, pickRandomBackground } from '../background';
+import { applyBackground, pickRandomBackground } from "../background";
 
 export default {
-  name: 'Background',
+  name: "Background",
   mounted() {
     applyBackground(pickRandomBackground(), this.$el);
-  },
+  }
 };
 </script>
 
@@ -23,7 +22,7 @@ export default {
   bottom: 0;
   left: 0;
 
-  transition: filter .5s linear;
+  transition: filter 0.5s linear;
 }
 
 body:hover .background {
