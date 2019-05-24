@@ -33,35 +33,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss" scoped>
-.list {
-  background-color: #fff;
-  user-select: none;
-  box-shadow: 0 0 5px;
-  text-align: center;
-  font-size: 16px;
-}
-
-.list__title {
-  text-align: center;
-  font-weight: bold;
-  padding: 8px;
-}
-
-.list__links {
-}
-
-.list__link {
-  display: block;
-  padding: 8px;
-  color: inherit;
-  text-decoration: none;
-
-  transition: 0.2s background-color;
-
-  &:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-}
-</style>
