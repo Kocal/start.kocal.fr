@@ -3,7 +3,7 @@
     <div class="font-bold p-2">
       {{ title }}
     </div>
-    <a v-for="(link, title) in links" :key="link" :href="link" target="_blank" rel="noreferrer noopener" class="block p-2 no-underline text-gray-800 hover:bg-gray-300">
+    <a v-for="(link, title) in links" :key="link" :href="link" target="_blank" rel="noreferrer noopener" class="block p-2 no-underline text-gray-800 hover:bg-gray-300 transition-bg transition-250">
       {{ title }}
     </a>
   </div>

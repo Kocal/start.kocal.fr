@@ -12,6 +12,12 @@ module.exports = {
         '48': '12rem'
       }
     },
+    filter: {
+      'blur-10': 'blur(10px)',
+    },
+  },
+  variants: {
+    filter: ['responsive', 'group-hover']
   },
   plugins: [
     require('tailwindcss-transitions')(),
