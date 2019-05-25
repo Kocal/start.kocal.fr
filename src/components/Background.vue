@@ -1,5 +1,5 @@
 <template>
-  <div class="background"/>
+  <div class="h-full w-full fixed -z-2 bg-cover group-hover:filter-blur-10 transition-filter transition-500"/>
 </template>
 
 <script>
@@ -12,21 +12,3 @@ export default {
   }
 };
 </script>
-
-<style>
-.background {
-  position: fixed;
-  z-index: -2;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  background-size: cover;
-  transition: filter 0.5s linear;
-}
-
-body:hover .background {
-  filter: blur(5px);
-}
-</style>

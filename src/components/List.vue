@@ -1,20 +1,11 @@
 <template>
-  <div class="list">
-    <div class="list__title">
+  <div class="min-w-48 m-2 shadow-2xl bg-white text-center">
+    <div class="font-bold p-2">
       {{ title }}
     </div>
-    <div class="list__links">
-      <a
-        v-for="(link, title) in links"
-        :key="link"
-        :href="link"
-        class="list__link"
-        target="_blank"
-        rel="noreferrer noopener"
-      >
-        {{ title }}
-      </a>
-    </div>
+    <a v-for="(link, title) in links" :key="link" :href="link" target="_blank" rel="noreferrer noopener" class="block p-2 no-underline text-gray-800 hover:bg-gray-300 transition-bg transition-250">
+      {{ title }}
+    </a>
   </div>
 </template>
 
@@ -33,35 +24,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss" scoped>
-.list {
-  background-color: #fff;
-  user-select: none;
-  box-shadow: 0 0 5px;
-  text-align: center;
-  font-size: 16px;
-}
-
-.list__title {
-  text-align: center;
-  font-weight: bold;
-  padding: 8px;
-}
-
-.list__links {
-}
-
-.list__link {
-  display: block;
-  padding: 8px;
-  color: inherit;
-  text-decoration: none;
-
-  transition: 0.2s background-color;
-
-  &:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-}
-</style>

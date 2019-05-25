@@ -1,19 +1,3 @@
 <template>
-  <div class="overlay"></div>
+  <div class="h-full w-full fixed -z-1 bg-black opacity-40"/>
 </template>
-
-<script>
-export default {};
-</script>
-
-<style scoped>
-.overlay {
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-</style>

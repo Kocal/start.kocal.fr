@@ -1,8 +1,8 @@
 <template>
-  <div id="app">
-    <background/>
-    <overlay/>
-    <list
+  <div class="w-screen h-screen flex flex-wrap items-center justify-center font-sans leading-relaxed group">
+    <Background/>
+    <Overlay/>
+    <List
       v-for="(links, title) in shortcuts"
       :key="title"
       :title="title"
@@ -63,33 +63,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss">
-body {
-  height: 100vh;
-  margin: 0;
-  line-height: 1.6;
-  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#app {
-  height: 100vh;
-  width: 100%;
-  max-width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-auto-columns: minmax(50px, auto);
-  grid-gap: 16px;
-}
-
-.list {
-  /*flex: 1;*/
-}
-</style>
