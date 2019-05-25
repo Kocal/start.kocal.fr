@@ -1,20 +1,11 @@
 <template>
-  <div class="list">
-    <div class="list__title">
+  <div class="w-48 m-2 shadow-2xl bg-white text-center">
+    <div class="font-bold p-2">
       {{ title }}
     </div>
-    <div class="list__links">
-      <a
-        v-for="(link, title) in links"
-        :key="link"
-        :href="link"
-        class="list__link"
-        target="_blank"
-        rel="noreferrer noopener"
-      >
-        {{ title }}
-      </a>
-    </div>
+    <a v-for="(link, title) in links" :key="link" :href="link" target="_blank" rel="noreferrer noopener" class="block p-2 no-underline text-gray-800 hover:bg-gray-300">
+      {{ title }}
+    </a>
   </div>
 </template>
 
@@ -24,12 +15,12 @@ export default {
   props: {
     title: {
       type: String,
-      required: true
+      required: true,
     },
     links: {
       type: Object,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 };
 </script>

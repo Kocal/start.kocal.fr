@@ -1,8 +1,8 @@
 <template>
-  <div class="w-screen h-screen">
+  <div class="w-screen h-screen flex flex-wrap items-center justify-center font-sans leading-relaxed ">
     <Background/>
     <Overlay/>
-    <list
+    <List
       v-for="(links, title) in shortcuts"
       :key="title"
       :title="title"
