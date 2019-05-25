@@ -1,5 +1,5 @@
 <template>
-  <div class="w-48 m-2 shadow-2xl bg-white text-center">
+  <div class="min-w-48 m-2 shadow-2xl bg-white text-center">
     <div class="font-bold p-2">
       {{ title }}
     </div>

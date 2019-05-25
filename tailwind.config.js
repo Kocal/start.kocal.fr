@@ -7,6 +7,9 @@ module.exports = {
       },
       opacity: {
         '40': '.4',
+      },
+      minWidth: {
+        '48': '12rem'
       }
     },
   },
