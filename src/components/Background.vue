@@ -1,5 +1,5 @@
 <template>
-  <div class="background"/>
+  <div class="h-full w-full fixed -z-2 bg-cover"/>
 </template>
 
 <script>

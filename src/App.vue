@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
-    <background/>
-    <overlay/>
+  <div class="w-screen h-screen">
+    <Background/>
+    <Overlay/>
     <list
       v-for="(links, title) in shortcuts"
       :key="title"
