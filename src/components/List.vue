@@ -15,12 +15,12 @@ export default {
   props: {
     title: {
       type: String,
-      required: true,
+      required: true
     },
     links: {
       type: Object,
-      required: true,
-    },
-  },
+      required: true
+    }
+  }
 };
 </script>

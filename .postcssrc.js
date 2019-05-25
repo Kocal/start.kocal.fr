@@ -1,20 +1,15 @@
 const tailwindcss = require("tailwindcss");
 const autoprefixer = require("autoprefixer");
-const purgecss = require('@fullhuman/postcss-purgecss')({
-  content: [
-    './src/**/*.vue',
-    './public/index.html',
-  ],
+const purgecss = require("@fullhuman/postcss-purgecss")({
+  content: ["./src/**/*.vue", "./public/index.html"],
 
-  defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || [],
+  defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || []
 });
 
 module.exports = {
   plugins: [
     tailwindcss("./tailwind.config.js"),
     autoprefixer(),
-    ...process.env.NODE_ENV === "production"
-      ? [purgecss]
-      : [],
-  ],
+    ...(process.env.NODE_ENV === "production" ? [purgecss] : [])
+  ]
 };
