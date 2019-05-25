@@ -12,6 +12,10 @@ module.exports = {
         '48': '12rem'
       }
     },
+    transitionProperty: {
+      filter: 'filter',
+      bg: 'background',
+    },
     filter: {
       'blur-10': 'blur(10px)',
     },
