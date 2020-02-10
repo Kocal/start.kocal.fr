@@ -22,7 +22,7 @@
     "sass-loader": "^8.0.2",
     "tailwindcss": "^1.1.4",
     "tailwindcss-filters": "^2.0.0",
-    "tailwindcss-transitions": "^2.1.0",
+    "tailwindcss-transitions": "^2.2.0",
     "vue-template-compiler": "^2.6.11"
   }
 }
