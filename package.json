@@ -19,7 +19,7 @@
     "@vue/cli-service": "^3.8.0",
     "@vue/eslint-config-prettier": "^4.0.1",
     "node-sass": "^4.14.1",
-    "sass-loader": "^8.0.2",
+    "sass-loader": "^9.0.2",
     "tailwindcss": "^1.6.1",
     "tailwindcss-filters": "^2.0.0",
     "tailwindcss-transitions": "^2.2.0",
