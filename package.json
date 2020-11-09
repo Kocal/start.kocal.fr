@@ -4,15 +4,21 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build"
+    "build": "tsc && vite build",
+    "lint": "yarn run lint:js",
+    "lint:js": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
   },
   "dependencies": {},
   "devDependencies": {
+    "@babel/eslint-parser": "^7.0.0",
     "@pika/react": "^16.13.1",
     "@pika/react-dom": "^16.13.1",
     "@types/react": "^16.9.56",
     "@types/react-dom": "^16.9.9",
+    "@yproximite/eslint-config-generator": "^1.0.3",
     "autoprefixer": "^9.8.6",
+    "eslint": "^7.0.0",
+    "prettier": "^2.0.0",
     "tailwindcss": "^1.9.6",
     "tailwindcss-filters": "^2.0.0",
     "tailwindcss-transitions": "^2.2.0",
