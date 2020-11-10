@@ -9,14 +9,14 @@
     "lint:js": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
   },
   "dependencies": {
+    "@pika/react": "^16.13.1",
+    "@pika/react-dom": "^16.13.1",
     "react": "npm:@pika/react",
     "react-dom": "npm:@pika/react-dom",
     "react-polymorphic-box": "^3.0.2"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.0.0",
-    "@pika/react": "^16.13.1",
-    "@pika/react-dom": "^16.13.1",
     "@types/react": "^16.9.56",
     "@types/react-dom": "^16.9.9",
     "@yproximite/eslint-config-generator": "^1.0.3",

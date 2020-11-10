@@ -239,13 +239,11 @@
     fastq "^1.6.0"
 
 "@pika/react-dom@^16.13.1", "react-dom@npm:@pika/react-dom":
-  name react-dom
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/@pika/react-dom/-/react-dom-16.13.1.tgz#8e684617ea2e3e0741e418954f74e8ec1c93f81d"
   integrity sha512-tCROpA6uP7caCNodaOUcqmauQmpVOmFXsaaKUJgLOMiZdlW+L02ItK3WAqGSOw25rM0bbwDXNC/x9PpfiQ9ESg==
 
 "@pika/react@^16.13.1", "react@npm:@pika/react":
-  name react
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/@pika/react/-/react-16.13.1.tgz#20e47997d2a2f1e5da39a8e28b75db2ec77d99c6"
   integrity sha512-v33Ub2QxntNpDFRnkj3tCbT6jMb7Etu7LOMQO/YAulLRIDtDvJdMwuOVJDdPYUmDtWjfWOB5xSP7nl7k0BApbQ==
