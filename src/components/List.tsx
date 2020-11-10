@@ -1,24 +1,26 @@
 import React from 'react';
+import { Box, PolymorphicComponentProps } from 'react-polymorphic-box';
 
-function List({ children }: React.PropsWithChildren<{}>) {
+const List: React.FunctionComponent & { Title: typeof Title; Item: typeof Item } = ({ children }) => (
+  <div className="min-w-48 m-2 shadow-2xl bg-white text-center">{children}</div>
+);
+
+const Title: React.FunctionComponent = ({ children }) => <div className="font-bold p-2">{children}</div>;
+
+const itemDefaultElement = 'div';
+type ItemOwnProps = Record<string, unknown>;
+type ItemProps<E extends React.ElementType> = PolymorphicComponentProps<E, ItemOwnProps>;
+const Item = <E extends React.ElementType = typeof itemDefaultElement>({ children, ...rest }: ItemProps<E>) => {
   return (
-    <div className="min-w-48 m-2 shadow-2xl bg-white text-center">
+    <Box
+      as={itemDefaultElement}
+      className="block p-2 no-underline text-gray-800 hover:bg-gray-300 transition-bg transition-250"
+      {...rest}
+    >
       {children}
-    </div>
+    </Box>
   );
-}
-
-function Title({ children }: React.PropsWithChildren<{}>) {
-  return <div className="font-bold p-2">{children}</div>;
-}
-
-function Item({ tag = 'div', children, ...rest }: React.PropsWithChildren<{ tag: keyof JSX.IntrinsicElements } & { [attr: string]: string }>) {
-  const Tag = tag;
-
-  return <Tag className="block p-2 no-underline text-gray-800 hover:bg-gray-300 transition-bg transition-250" {...rest}>
-    {children}
-  </Tag>;
-}
+};
 
 List.Title = Title;
 List.Item = Item;

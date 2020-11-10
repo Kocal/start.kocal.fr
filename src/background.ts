@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-unresolved,import/no-webpack-loader-syntax
 import backgrounds from 'globby!./assets/img/backgrounds/*.jpg';
 
 export const pickRandomBackground = (): string => {

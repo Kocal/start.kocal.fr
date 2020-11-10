@@ -238,12 +238,14 @@
     "@nodelib/fs.scandir" "2.1.3"
     fastq "^1.6.0"
 
-"@pika/react-dom@^16.13.1":
+"@pika/react-dom@^16.13.1", "react-dom@npm:@pika/react-dom":
+  name react-dom
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/@pika/react-dom/-/react-dom-16.13.1.tgz#8e684617ea2e3e0741e418954f74e8ec1c93f81d"
   integrity sha512-tCROpA6uP7caCNodaOUcqmauQmpVOmFXsaaKUJgLOMiZdlW+L02ItK3WAqGSOw25rM0bbwDXNC/x9PpfiQ9ESg==
 
-"@pika/react@^16.13.1":
+"@pika/react@^16.13.1", "react@npm:@pika/react":
+  name react
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/@pika/react/-/react-16.13.1.tgz#20e47997d2a2f1e5da39a8e28b75db2ec77d99c6"
   integrity sha512-v33Ub2QxntNpDFRnkj3tCbT6jMb7Etu7LOMQO/YAulLRIDtDvJdMwuOVJDdPYUmDtWjfWOB5xSP7nl7k0BApbQ==
@@ -1613,6 +1615,11 @@ eslint-config-prettier@^6.13.0:
   integrity sha512-a1+kOYLR8wMGustcgAjdydMsQ2A/2ipRPwRKUmfYaSxc9ZPcrku080Ctl6zrZzZNs/U82MjSv+qKREkoq3bJaw==
   dependencies:
     get-stdin "^6.0.0"
+
+eslint-import-resolver-alias@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/eslint-import-resolver-alias/-/eslint-import-resolver-alias-1.1.2.tgz#297062890e31e4d6651eb5eba9534e1f6e68fc97"
+  integrity sha512-WdviM1Eu834zsfjHtcGHtGfcu+F30Od3V7I9Fi57uhBEwPkjDcii7/yW8jAT+gOhn4P/vOxxNAXbFAKsrrc15w==
 
 eslint-import-resolver-node@^0.3.4:
   version "0.3.4"
@@ -3440,6 +3447,11 @@ randomfill@^1.0.3:
   dependencies:
     randombytes "^2.0.5"
     safe-buffer "^5.1.0"
+
+react-polymorphic-box@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/react-polymorphic-box/-/react-polymorphic-box-3.0.2.tgz#f7830deac08b0ae55226a85a2cc2bfa0af53e8f1"
+  integrity sha512-6nTfLUgYPuniGaosD2uDMmS/ZHh4xu2BtscNYZK6HMaVyDgdk4qo2grsEBreOR5CS9Lz4wS835DBKPZ53dFPXg==
 
 react-refresh@^0.8.2:
   version "0.8.3"

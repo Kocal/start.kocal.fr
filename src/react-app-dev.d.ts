@@ -1,11 +1,4 @@
-/// <reference types="react" />
-/// <reference types="react-dom" />
-
 declare namespace NodeJS {
-  interface Process {
-    env: ProcessEnv
-  }
-
   interface ProcessEnv {
     /**
      * By default, there are two modes in Vite:
@@ -16,11 +9,15 @@ declare namespace NodeJS {
      * You can overwrite the default mode used for a command by passing the --mode option flag.
      *
      */
-    readonly NODE_ENV: 'development' | 'production'
+    readonly NODE_ENV: 'development' | 'production';
+  }
+
+  interface Process {
+    env: ProcessEnv;
   }
 }
 
-declare var process: NodeJS.Process;
+declare let process: NodeJS.Process;
 
 declare module '*.gif' {
   const src: string;
