@@ -1,0 +1,9 @@
+[build]
+command = "yarn run build"
+publish = "dist"
+
+[build.environment]
+NPM_CONFIG_USERCONFIG = ".netlify/.npmrc"
+
+[build.processing.images]
+compress = true

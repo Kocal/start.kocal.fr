@@ -1,0 +1,111 @@
+[
+  {
+    "title": "internet",
+    "links": [
+      {
+        "link": "https://twitter.com",
+        "text": "twitter"
+      },
+      {
+        "link": "https://www.youtube.com",
+        "text": "youtube"
+      },
+      {
+        "link": "http://www.twitch.tv/",
+        "text": "twitch"
+      },
+      {
+        "link": "http://hiddenlol.com",
+        "text": "hiddenlol"
+      },
+      {
+        "link": "http://hugelol.com",
+        "text": "hugelol"
+      }
+    ]
+  },
+  {
+    "title": "tech",
+    "links": [
+      {
+        "link": "https://korben.info",
+        "text": "korben"
+      },
+      {
+        "link": "http://www.developpez.com",
+        "text": "developpez"
+      },
+      {
+        "link": "http://www.numerama.com",
+        "text": "numerama"
+      }
+    ]
+  },
+  {
+    "title": "mail",
+    "links": [
+      {
+        "link": "https://outlook.com",
+        "text": "outlook"
+      },
+      {
+        "link": "https://gmail.com",
+        "text": "gmail"
+      }
+    ]
+  },
+  {
+    "title": "4chan",
+    "links": [
+      {
+        "link": "https://boards.4chan.org/a",
+        "text": "/a/"
+      },
+      {
+        "link": "https://boards.4chan.org/b",
+        "text": "/b/"
+      },
+      {
+        "link": "https://boards.4chan.org/g",
+        "text": "/g/"
+      },
+      {
+        "link": "https://boards.4chan.org/pol",
+        "text": "/pol/"
+      }
+    ]
+  },
+  {
+    "title": "reddit",
+    "links": [
+      {
+        "link": "https://www.reddit.com/r/programmerhumor",
+        "text": "/r/programmerhumor"
+      },
+      {
+        "link": "https://www.reddit.com/r/talesfromtechsupport",
+        "text": "/r/talesfromtechsupport"
+      },
+      {
+        "link": "https://www.reddit.com/r/techsupportgore/",
+        "text": "/r/techsupportgore"
+      },
+      {
+        "link": "https://www.reddit.com/r/badcode/",
+        "text": "/r/badcode"
+      },
+      {
+        "link": "https://www.reddit.com/r/laravel/",
+        "text": "/r/laravel"
+      },
+      {
+        "link": "https://www.reddit.com/r/vuejs/",
+        "text": "/r/vuejs"
+      },
+      {
+        "link": "https://www.reddit.com/r/lolphp/",
+        "text": "/r/lolphp"
+      }
+    ]
+  }
+]
