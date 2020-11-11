@@ -13,7 +13,8 @@
     "@pika/react-dom": "^16.13.1",
     "react": "npm:@pika/react",
     "react-dom": "npm:@pika/react-dom",
-    "react-polymorphic-box": "^3.0.2"
+    "react-polymorphic-box": "^3.0.2",
+    "register-service-worker": "^1.7.1"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.0.0",
@@ -24,6 +25,7 @@
     "eslint": "^7.0.0",
     "eslint-import-resolver-alias": "^1.1.2",
     "prettier": "^2.0.0",
+    "rollup-plugin-workbox": "^5.2.1",
     "tailwindcss": "^1.9.6",
     "tailwindcss-filters": "^2.0.0",
     "tailwindcss-transitions": "^2.2.0",

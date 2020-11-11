@@ -1,11 +1,15 @@
 import * as path from 'path';
-import * as reactPlugin from 'vite-plugin-react';
+import { generateSW } from 'rollup-plugin-workbox';
 import type { UserConfig } from 'vite';
+import * as reactPlugin from 'vite-plugin-react';
 
 const sharedConfig: UserConfig = {
   jsx: 'react',
   plugins: [reactPlugin],
   enableRollupPluginVue: false,
+  rollupInputOptions: {
+    pluginsPostBuild: [generateSW(require('./workbox.config'))],
+  },
   alias: {
     '/@/': path.resolve(__dirname, 'src'),
   },
