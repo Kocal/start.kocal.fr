@@ -1353,10 +1353,10 @@
   resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.0.2.tgz#419bd85a2ebdbd4f42963e98c5a1b103452176d9"
   integrity sha512-Zx869zlNoujFOclKIoYmkh8ES2RcS/+Jn546yOiPyZ+3+Ejivnr+fb8l+DdXUEFjo+iVDNR3KyLzg03aBFfZ4Q==
 
-"@yproximite/eslint-config-generator@^1.0.3":
-  version "1.0.3"
-  resolved "https://npm.pkg.github.com/download/@yproximite/eslint-config-generator/1.0.3/a983202eb0546f10cadea381bde197b78bad12d3f395931d66672f6a80668b39#2c091cd2ed61e4c5cfa3dc57ccd66a698dbda37e"
-  integrity sha512-xW5RCodtPCREvBGZmGmZodSQxP2+qADW1CrUp6pLsKSMK0svRvlg+NvyW8XG3L9mvUE+XzigY6Zrht/5yQqoOw==
+"@yproximite/eslint-config-generator@^1.1.0":
+  version "1.1.0"
+  resolved "https://npm.pkg.github.com/download/@yproximite/eslint-config-generator/1.1.0/c30f4682f5a4da65f0f515b5238702f8b49e385149c1324ec8afc504218dcba5#e45ef22a34645e00b287d97582688b9ebd3ae0c2"
+  integrity sha512-NeqJhDD5GWPnaoWvvobBSjMDtylMPE4BGtLMpcggKWILirS4wyhZKNzmk8yQgM2UpDpaX6p69Khj6ZM+waMLuA==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^4.5.0"
     "@typescript-eslint/parser" "^4.5.0"
