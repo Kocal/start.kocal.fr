@@ -20,7 +20,7 @@
     "@babel/eslint-parser": "^7.0.0",
     "@types/react": "^16.9.56",
     "@types/react-dom": "^16.9.9",
-    "@yproximite/eslint-config-generator": "^1.0.3",
+    "@yproximite/eslint-config-generator": "^1.1.0",
     "autoprefixer": "^9.8.6",
     "eslint": "^7.14.0",
     "eslint-import-resolver-alias": "^1.1.2",
