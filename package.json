@@ -9,21 +9,18 @@
     "lint:js": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
   },
   "dependencies": {
-    "@pika/react": "^16.13.1",
-    "@pika/react-dom": "^16.13.1",
-    "react": "npm:@pika/react",
-    "react-dom": "npm:@pika/react-dom",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "react-polymorphic-box": "^3.0.2",
     "register-service-worker": "^1.7.1"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.0.0",
-    "@types/react": "^16.9.56",
-    "@types/react-dom": "^16.9.9",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
     "@yproximite/eslint-config-generator": "^1.1.0",
     "autoprefixer": "^9.8.6",
     "eslint": "^7.14.0",
-    "eslint-import-resolver-alias": "^1.1.2",
     "prettier": "^2.2.1",
     "rollup-plugin-workbox": "^5.2.1",
     "tailwindcss": "^1.9.6",
@@ -31,7 +28,7 @@
     "tailwindcss-transitions": "^2.2.0",
     "typescript": "^4.1.2",
     "vite": "^1.0.0-rc.13",
-    "vite-plugin-react": "^3.0.2",
+    "vite-plugin-react": "^4.0.1",
     "vite-transform-globby-import": "^1.0.0-rc.7"
   }
 }
