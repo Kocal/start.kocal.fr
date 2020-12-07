@@ -20,7 +20,7 @@
     "@types/react-dom": "^17.0.0",
     "@yproximite/eslint-config-generator": "^1.1.0",
     "autoprefixer": "^9.8.6",
-    "eslint": "^7.14.0",
+    "eslint": "^7.15.0",
     "prettier": "^2.2.1",
     "rollup-plugin-workbox": "^5.2.1",
     "tailwindcss": "^1.9.6",
