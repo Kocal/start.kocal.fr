@@ -4332,10 +4332,10 @@ react-dom@^17.0.1:
     object-assign "^4.1.1"
     scheduler "^0.20.1"
 
-react-polymorphic-box@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/react-polymorphic-box/-/react-polymorphic-box-3.0.2.tgz#f7830deac08b0ae55226a85a2cc2bfa0af53e8f1"
-  integrity sha512-6nTfLUgYPuniGaosD2uDMmS/ZHh4xu2BtscNYZK6HMaVyDgdk4qo2grsEBreOR5CS9Lz4wS835DBKPZ53dFPXg==
+react-polymorphic-box@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/react-polymorphic-box/-/react-polymorphic-box-3.0.3.tgz#4d0fe6e874a288c5c0868dce514962b100815d04"
+  integrity sha512-UUm65IGKXW7/KW4z4hyPFaQ8GMcdRMlMm3jPlU26DZ8CaWUbNP3wLD9dfjjSapgFC63uXCibtn6Th6IYd1Cm8g==
 
 react-refresh@^0.8.2:
   version "0.8.3"
