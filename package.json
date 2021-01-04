@@ -22,7 +22,7 @@
     "autoprefixer": "^9.8.6",
     "eslint": "^7.17.0",
     "prettier": "^2.2.1",
-    "rollup-plugin-workbox": "^5.2.1",
+    "rollup-plugin-workbox": "^6.1.0",
     "tailwindcss": "^1.9.6",
     "tailwindcss-filters": "^2.0.0",
     "tailwindcss-transitions": "^2.2.0",
