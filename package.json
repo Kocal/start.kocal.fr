@@ -8,6 +8,9 @@
     "lint": "yarn run lint:js",
     "lint:js": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
   },
+  "engines": {
+    "node": ">=12.0.0"
+  },
   "dependencies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -18,6 +21,7 @@
     "@babel/eslint-parser": "^7.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "@vitejs/plugin-react-refresh": "^1.2.2",
     "@yproximite/eslint-config-generator": "^1.1.1",
     "autoprefixer": "^9.8.6",
     "eslint": "^7.19.0",
@@ -27,8 +31,6 @@
     "tailwindcss-filters": "^2.0.0",
     "tailwindcss-transitions": "^2.2.0",
     "typescript": "^4.1.3",
-    "vite": "^1.0.0-rc.13",
-    "vite-plugin-react": "^4.0.1",
-    "vite-transform-globby-import": "^1.0.0-rc.7"
+    "vite": "^2.0.0-beta.64"
   }
 }

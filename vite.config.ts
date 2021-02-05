@@ -1,23 +1,16 @@
+import reactRefresh from '@vitejs/plugin-react-refresh';
 import * as path from 'path';
 import { generateSW } from 'rollup-plugin-workbox';
-import type { UserConfig } from 'vite';
-import * as reactPlugin from 'vite-plugin-react';
+import { defineConfig } from 'vite';
 
-const sharedConfig: UserConfig = {
-  jsx: 'react',
-  plugins: [reactPlugin],
-  enableRollupPluginVue: false,
-  rollupInputOptions: {
-    pluginsPostBuild: [generateSW(require('./workbox.config'))],
-  },
+export default defineConfig({
+  plugins: [reactRefresh()],
   alias: {
     '/@/': path.resolve(__dirname, 'src'),
   },
-};
-
-const config: UserConfig = {
-  ...sharedConfig,
-  transforms: [require('vite-transform-globby-import')(sharedConfig)],
-};
-
-export default config;
+  build: {
+    rollupOptions: {
+      plugins: [generateSW(require('./workbox.config'))],
+    },
+  },
+});
