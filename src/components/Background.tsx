@@ -5,7 +5,7 @@ const Background: React.FunctionComponent = () => {
   const [background, setBackground] = useState<string | null>(null);
 
   useEffect(() => {
-    pickRandomBackground().then(b => setBackground(b));
+    pickRandomBackground().then(setBackground);
   });
 
   return (
