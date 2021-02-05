@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { pickRandomBackground } from '../background';
 
 const Background: React.FunctionComponent = () => {
-  const background = pickRandomBackground();
+  const [background, setBackground] = useState<string | null>(null);
+
+  useEffect(() => {
+    pickRandomBackground().then(b => setBackground(b));
+  });
 
   return (
     <div
       className="h-full w-full fixed -z-2 bg-cover group-hover:filter-blur-10 transition-filter transition-500"
-      style={{ backgroundImage: `url(${background})` }}
+      style={{ backgroundImage: background !== null ? `url(${background})` : undefined }}
     />
   );
 };
