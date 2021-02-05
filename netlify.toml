@@ -3,6 +3,7 @@ command = "yarn run build"
 publish = "dist"
 
 [build.environment]
+NODE_VERSION = "14"
 NPM_CONFIG_USERCONFIG = ".netlify/.npmrc"
 
 [build.processing.images]
