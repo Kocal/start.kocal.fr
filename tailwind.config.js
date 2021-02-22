@@ -24,5 +24,5 @@ module.exports = {
   variants: {
     filter: ['responsive', 'group-hover'],
   },
-  plugins: [require('tailwindcss-transitions')(), require('tailwindcss-filters')()],
+  plugins: [require('tailwindcss-filters')()],
 };
