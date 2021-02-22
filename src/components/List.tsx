@@ -14,7 +14,7 @@ const Item = <E extends React.ElementType = typeof itemDefaultElement>({ childre
   return (
     <Box
       as={itemDefaultElement}
-      className="block p-2 no-underline text-gray-800 hover:bg-gray-300 transition-bg transition-250"
+      className="block p-2 no-underline text-gray-800 hover:bg-gray-300 transition-bg transition-300"
       {...rest}
     >
       {children}

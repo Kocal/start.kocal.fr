@@ -5,8 +5,10 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   plugins: [reactRefresh()],
-  alias: {
-    '/@/': path.resolve(__dirname, 'src'),
+  resolve: {
+    alias: {
+      '/@/': path.resolve(__dirname, 'src'),
+    },
   },
   build: {
     rollupOptions: {
