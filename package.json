@@ -21,7 +21,7 @@
     "@babel/eslint-parser": "^7.14.2",
     "@tailwindcss/jit": "^0.1.18",
     "@types/react": "^17.0.5",
-    "@types/react-dom": "^17.0.3",
+    "@types/react-dom": "^17.0.5",
     "@vitejs/plugin-react-refresh": "^1.3.3",
     "@yproximite/eslint-config-generator": "^1.2.1",
     "autoprefixer": "^10.2.5",
