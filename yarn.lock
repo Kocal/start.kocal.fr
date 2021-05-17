@@ -1289,10 +1289,10 @@
     "@babel/plugin-transform-react-jsx-source" "^7.12.13"
     react-refresh "^0.9.0"
 
-"@yproximite/eslint-config-generator@^1.2.0":
-  version "1.2.0"
-  resolved "https://npm.pkg.github.com/download/@yproximite/eslint-config-generator/1.2.0/ae7c94ee1aae8df9a464ddbab304d841b1ffdf7a516a7f473eb76a73398af065#2cc6eff7ab63077f6a113e7b5a1c09672b6b4df4"
-  integrity sha512-3TVkr22+bh4fLnFo/8wa2WAsszp2XJtNifHBOG36JrmUeIth6lJuppy24rqu6kMtPTTXMMpiKmP6t2LPRkCdVQ==
+"@yproximite/eslint-config-generator@^1.2.1":
+  version "1.2.1"
+  resolved "https://npm.pkg.github.com/download/@yproximite/eslint-config-generator/1.2.1/c80d3a4f83c7d32a413ef3f31b9ebe3a39b38c10c12051a78692a5039133de2d#ce0a7016bb59d2f0e05bdf2d9d8bb5ba577baba5"
+  integrity sha512-Z8+osGCd1M06jIPDxqcNit/u+oqWAhwvdbyVEJ6Y5Mqqg03rcc0aPJLqaAc7GyENBXZw6lMHwHhogazYNYtzcg==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^4.5.0"
     "@typescript-eslint/parser" "^4.5.0"
