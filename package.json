@@ -18,7 +18,7 @@
     "register-service-worker": "^1.7.2"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.14.7",
+    "@babel/eslint-parser": "^7.14.9",
     "@tailwindcss/jit": "^0.1.18",
     "@types/react": "^17.0.15",
     "@types/react-dom": "^17.0.9",
