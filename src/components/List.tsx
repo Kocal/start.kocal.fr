@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const List: React.FunctionComponent<{ children: React.ReactNode}> = ({ children }) => (
+export const List: React.FunctionComponent<{ children: React.ReactNode }> = ({ children }) => (
   <div className="min-w-48 m-2 shadow-2xl bg-white text-center">{children}</div>
 );
 
