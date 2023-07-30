@@ -23,7 +23,7 @@
     "@kocal/eslint-config-generator-plugin-typescript": "^3.0.0",
     "@types/react": "^18.2.17",
     "@types/react-dom": "^18.2.7",
-    "@vitejs/plugin-react": "^4.0.3",
+    "@vitejs/plugin-react-swc": "^3.3.2",
     "autoprefixer": "^10.4.14",
     "caniuse-lite": "^1.0.30001517",
     "eslint": "^8.46.0",
