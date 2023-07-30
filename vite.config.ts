@@ -1,10 +1,10 @@
 import * as path from 'path';
-import reactRefresh from '@vitejs/plugin-react-refresh';
+import react from '@vitejs/plugin-react';
 import { generateSW } from 'rollup-plugin-workbox';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  plugins: [reactRefresh()],
+  plugins: [react()],
   resolve: {
     alias: {
       '/@/': path.resolve(__dirname, 'src'),
