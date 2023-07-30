@@ -1,5 +1,6 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: ['./src/**/*.tsx', './index.html'],
+  content: ['./src/**/*.tsx', './index.html'],
   theme: {
     extend: {
       zIndex: {
@@ -13,16 +14,5 @@ module.exports = {
         48: '12rem',
       },
     },
-    transitionProperty: {
-      filter: 'filter',
-      bg: 'background',
-    },
-    filter: {
-      'blur-10': 'blur(10px)',
-    },
   },
-  variants: {
-    filter: ['responsive', 'group-hover'],
-  },
-  plugins: [require.resolve('tailwindcss-filters')],
 };

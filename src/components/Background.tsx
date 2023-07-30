@@ -10,7 +10,7 @@ const Background: React.FunctionComponent = () => {
 
   return (
     <div
-      className="h-full w-full fixed -z-2 bg-cover group-hover:filter-blur-10 transition-filter transition-500"
+      className="h-full w-full fixed -z-2 bg-cover group-hover:blur group-hover:scale-105 transition duration-500"
       style={{ backgroundImage: background !== null ? `url(${background})` : undefined }}
     />
   );
