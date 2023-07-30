@@ -1,6 +1,6 @@
 import React from 'react';
 import Background from './components/Background';
-import List from './components/List';
+import { List, ListItem, ListTitle } from './components/List';
 import Overlay from './components/Overlay';
 import shortcuts from './shortcuts.json';
 
@@ -12,12 +12,12 @@ const App: React.FunctionComponent = () => (
     {shortcuts.map(({ title, links }) => {
       return (
         <List key={title}>
-          <List.Title>{title}</List.Title>
+          <ListTitle>{title}</ListTitle>
           {links.map(({ link, text }) => {
             return (
-              <List.Item key={link} as="a" href={link} target="_blank" rel="noreferrer noopener">
+              <ListItem key={link} as="a" href={link} target="_blank" rel="noreferrer noopener">
                 {text}
-              </List.Item>
+              </ListItem>
             );
           })}
         </List>

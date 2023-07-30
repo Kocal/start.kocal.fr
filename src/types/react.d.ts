@@ -1,7 +1,7 @@
-type AnyTag = string | React.FunctionComponent<never> | (new (props: never) => React.Component);
+type AsProp<C extends React.ElementType> = {
+  as?: C;
+};
+type PropsToOmit<C extends React.ElementType, P> = keyof (AsProp<C> & P);
 
-type PropsOf<Tag> = Tag extends keyof JSX.IntrinsicElements
-  ? JSX.IntrinsicElements[Tag]
-  : Tag extends React.ComponentType<infer Props>
-  ? Props & JSX.IntrinsicAttributes
-  : never;
+type PolymorphicComponentProp<C extends React.ElementType, Props = {}> = React.PropsWithChildren<Props & AsProp<C>> &
+  Omit<React.ComponentPropsWithoutRef<C>, PropsToOmit<C, Props>>;
