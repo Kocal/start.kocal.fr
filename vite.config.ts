@@ -1,5 +1,5 @@
-import reactRefresh from '@vitejs/plugin-react-refresh';
 import * as path from 'path';
+import reactRefresh from '@vitejs/plugin-react-refresh';
 import { generateSW } from 'rollup-plugin-workbox';
 import { defineConfig } from 'vite';
 
