@@ -1,0 +1,23 @@
+version: 2
+registries:
+  npm-registry-npm-pkg-github-com:
+    type: npm-registry
+    url: https://npm.pkg.github.com
+    token: "${{secrets.NPM_REGISTRY_NPM_PKG_GITHUB_COM_TOKEN}}"
+
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: tailwindcss-filters
+    versions:
+    - 3.0.0
+  - dependency-name: vite
+    versions:
+    - 2.0.0-beta.48
+    - 2.0.0-beta.60
+  registries:
+  - npm-registry-npm-pkg-github-com
