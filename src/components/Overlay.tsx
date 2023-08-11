@@ -1,5 +1,3 @@
-import React from 'react';
+import { component$ } from '@builder.io/qwik';
 
-const Overlay: React.FunctionComponent = () => <div className="h-full w-full fixed -z-1 bg-black opacity-40" />;
-
-export default Overlay;
+export const Overlay = component$(() => <div class="h-full w-full fixed -z-1 bg-black opacity-40" />);

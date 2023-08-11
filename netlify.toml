@@ -4,7 +4,3 @@ publish = "dist"
 
 [build.environment]
 NODE_VERSION = "20"
-NPM_CONFIG_USERCONFIG = ".netlify/.npmrc"
-
-[build.processing.images]
-compress = true

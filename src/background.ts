@@ -1,4 +1,4 @@
-// @ts-expect-error glob is not defined on ImportMeta, but IDK why because Vite client.d.ts define it
+// @ts-expect-error Type is incorrect :(
 const backgrounds: Record<string, () => { default: string }> = import.meta.glob('./assets/img/backgrounds/*');
 
 export async function pickRandomBackground(): Promise<string> {
