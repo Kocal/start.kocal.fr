@@ -1,11 +1,17 @@
 import { pickRandomBackground } from '~/background';
 import { component$, useSignal, useVisibleTask$ } from '@builder.io/qwik';
+import { isServer } from '@builder.io/qwik/build';
 
 export const Background = component$(() => {
   const background = useSignal<string | null>(null);
 
   useVisibleTask$(() => {
-    pickRandomBackground().then((randomBackground) => (background.value = randomBackground));
+    if (isServer) {
+      return; // Server guard
+    }
+    pickRandomBackground().then((randomBackground) => {
+      background.value = randomBackground;
+    });
   });
 
   return (
