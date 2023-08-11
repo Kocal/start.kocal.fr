@@ -1,20 +1,9 @@
 {
-  "name": "start",
-  "short_name": "start",
-  "icons": [
-    {
-      "src": "/img/icons/android-chrome-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/img/icons/android-chrome-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ],
-  "start_url": "/index.html",
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "name": "qwik-project-name",
+  "short_name": "Welcome to Qwik",
+  "start_url": ".",
   "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#0E7CFE"
+  "background_color": "#fff",
+  "description": "A Qwik project app."
 }

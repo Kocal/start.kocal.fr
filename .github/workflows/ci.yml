@@ -1,40 +1,40 @@
 name: Node CI
 
 on:
-    push:
-        branches:
-            - master
-    pull_request:
-        types: [opened, synchronize, reopened, ready_for_review]
+  push:
+    branches:
+      - master
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
 
 jobs:
-    ci:
-        runs-on: ubuntu-latest
+  ci:
+    runs-on: ubuntu-latest
 
-        steps:
-            -   uses: actions/checkout@v2
+    steps:
+      - uses: actions/checkout@v2
 
-            -   name: Use Node.js
-                uses: actions/setup-node@v1
-                with:
-                    node-version: 14
-                    registry-url: 'https://npm.pkg.github.com'
-                    scope: '@yproximite'
-                    always-auth: true
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+          registry-url: "https://npm.pkg.github.com"
+          scope: "@yproximite"
+          always-auth: true
 
-            - name: Cache Node.js dependencies
-              uses: actions/cache@v2
-              with:
-                  path: |
-                      $(yarn cache dir)
-                  key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
+      - name: Cache Node.js dependencies
+        uses: actions/cache@v2
+        with:
+          path: |
+            $(yarn cache dir)
+          key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
 
-            -   run: yarn install --frozen-lockfile
-                env:
-                    NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: yarn install --frozen-lockfile
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-            -   run: yarn lint:js --no-fix
+      - run: yarn lint:js --no-fix
 
-            -   run: yarn tsc --noEmit
+      - run: yarn tsc --noEmit
 
-            -   run: yarn build
+      - run: yarn build

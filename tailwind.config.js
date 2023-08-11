@@ -1,17 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.tsx', './index.html'],
+  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
       zIndex: {
-        '-2': '-2',
-        '-1': '-1',
+        "-2": "-2",
+        "-1": "-1",
       },
       opacity: {
-        40: '.4',
+        40: ".4",
       },
       minWidth: {
-        48: '12rem',
+        48: "12rem",
       },
     },
   },
