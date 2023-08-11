@@ -18,8 +18,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 14
-          registry-url: "https://npm.pkg.github.com"
-          scope: "@yproximite"
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@yproximite'
           always-auth: true
 
       - name: Cache Node.js dependencies

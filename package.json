@@ -1,9 +1,10 @@
 {
-  "name": "my-qwik-empty-starter",
-  "description": "App with Routing built-in ready to create your app",
+  "name": "start.kocal.fr",
+  "description": "My start page.",
   "engines": {
-    "node": ">=15.0.0"
+    "node": ">=20.0.0"
   },
+  "packageManager": "pnpm@8.6.9",
   "private": true,
   "scripts": {
     "build": "qwik build",
@@ -37,5 +38,10 @@
     "undici": "5.22.1",
     "vite": "4.4.0",
     "vite-tsconfig-paths": "4.2.0"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true,
+    "jsxSingleQuote": false
   }
 }
