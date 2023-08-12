@@ -1,12 +1,12 @@
 import {component$, useSignal, useVisibleTask$} from '@builder.io/qwik';
-const backgrounds = import.meta.glob<string>('../assets/img/backgrounds/*.jpg', { import: 'default' });
+const backgrounds = import.meta.glob<string>('../assets/img/backgrounds/*.jpg', { import: 'default', eager: true });
 
 export const Background = component$(() => {
   const background = useSignal<string | null>(null);
 
   useVisibleTask$(async () => {
     console.log(backgrounds);
-    background.value = await Object.values(backgrounds)[0]();
+    background.value = Object.values(backgrounds)[0];
   }, {
     strategy: 'document-ready'
   });
