@@ -1,14 +1,13 @@
-import { pickRandomBackground } from '~/background';
-import { component$, useSignal, useVisibleTask$ } from '@builder.io/qwik';
+import { component$, useSignal } from '@builder.io/qwik';
 
 export const Background = component$(() => {
   const background = useSignal<string | null>(null);
 
-  useVisibleTask$(async () => {
-    background.value = await pickRandomBackground()
-  }, {
-    strategy: 'document-ready'
-  });
+  //useVisibleTask$(async () => {
+  //  background.value = await pickRandomBackground()
+  //}, {
+  //  strategy: 'document-ready'
+  //});
 
   return (
     <div
