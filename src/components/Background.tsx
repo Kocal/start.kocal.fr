@@ -8,6 +8,8 @@ export const Background = component$(() => {
     pickRandomBackground().then((randomBackground) => {
       background.value = randomBackground;
     });
+  }, {
+    strategy: 'document-ready'
   });
 
   return (
