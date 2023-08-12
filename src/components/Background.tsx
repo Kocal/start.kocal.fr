@@ -4,10 +4,8 @@ import { component$, useSignal, useVisibleTask$ } from '@builder.io/qwik';
 export const Background = component$(() => {
   const background = useSignal<string | null>(null);
 
-  useVisibleTask$(() => {
-    pickRandomBackground().then((randomBackground) => {
-      background.value = randomBackground;
-    });
+  useVisibleTask$(async () => {
+    background.value = await pickRandomBackground()
   }, {
     strategy: 'document-ready'
   });
