@@ -5,8 +5,11 @@ export const Background = component$(() => {
   const background = useSignal<string | null>(null);
 
   useVisibleTask$(async () => {
+    console.log('Background: visible');
     background.value = null;
+    console.log('Background: random before')
     console.log(await pickRandomBackground());
+    console.log('Background: random after')
   }, {
     strategy: 'document-ready'
   });
