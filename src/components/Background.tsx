@@ -1,21 +1,30 @@
-import { component$, useSignal, useTask$ } from '@builder.io/qwik';
-
-const backgrounds = import.meta.glob<string>('../assets/img/backgrounds/*.jpg', { import: 'default', as: 'string' });
+import { component$ } from '@builder.io/qwik';
+import type { DocumentHead } from '@builder.io/qwik-city';
+import { useRandomBackground } from '~/routes';
 
 export const Background = component$(() => {
-  const background = useSignal<string | null>(null);
-
-  useTask$(async () => {
-    const randomBackgroundIndex = Math.floor(Math.random() * Object.keys(backgrounds).length);
-    background.value = await Object.values(backgrounds)[randomBackgroundIndex]();
-  });
+  const background = useRandomBackground();
 
   return (
     <div
       class="h-full w-full fixed -z-2 bg-cover group-hover:blur group-hover:scale-105 transition duration-500"
       style={{
-        backgroundImage: background.value !== null ? `url(${background.value})` : undefined,
+        backgroundImage: `url(${background.value})`,
       }}
     />
   );
 });
+
+export const head: DocumentHead = ({ resolveValue }) => {
+  const background = resolveValue(useRandomBackground);
+
+  return {
+    links: [
+      {
+        rel: 'preload',
+        as: 'image',
+        href: background,
+      },
+    ],
+  };
+};

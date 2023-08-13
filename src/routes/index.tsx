@@ -4,6 +4,15 @@ import shortcuts from '~/shortcuts.json';
 import { List, ListItem, ListTitle } from '~/components/List';
 import { Background } from '~/components/Background';
 import { Overlay } from '~/components/Overlay';
+import { routeLoader$ } from '@builder.io/qwik-city';
+
+const backgrounds = import.meta.glob<string>('../assets/img/backgrounds/*.jpg', { import: 'default', as: 'string' });
+
+export const useRandomBackground = routeLoader$(async () => {
+  const randomBackgroundIndex = Math.floor(Math.random() * Object.keys(backgrounds).length);
+
+  return await Object.values(backgrounds)[randomBackgroundIndex]();
+});
 
 export default component$(() => {
   return (
