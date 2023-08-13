@@ -12,6 +12,16 @@ export const Background = component$(() => {
     console.log('2nd visible async');
   })
 
+  useVisibleTask$(async () => {
+    console.log('3rd visible');
+  }, {
+    strategy: 'document-ready'
+  })
+  useVisibleTask$(async () => {
+    console.log('4th visible');
+  }, {
+    strategy: 'intersection-observer'
+  })
 
   return (
     <div
