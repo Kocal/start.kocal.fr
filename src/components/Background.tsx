@@ -12,19 +12,6 @@ export const Background = component$(() => {
     console.log('2nd visible async');
   })
 
-  useVisibleTask$(async () => {
-    console.log('3rd visible async document-ready');
-  }, {
-    strategy: 'document-ready'
-  })
-
-  useVisibleTask$(async () => {
-    console.log(backgrounds);
-    console.log(Object.values(backgrounds));
-    console.log(Object.values(backgrounds)[0]);
-  }, {
-    strategy: 'document-ready'
-  });
 
   return (
     <div
