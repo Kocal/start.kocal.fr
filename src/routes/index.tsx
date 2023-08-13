@@ -17,6 +17,7 @@ export const useRandomBackground = routeLoader$(async () => {
 
 export default component$(() => {
     const randomBackground = useRandomBackground();
+
     return (
         <div class="w-screen h-screen flex flex-wrap items-center justify-center font-sans leading-relaxed group">
             <Background background={randomBackground}/>
