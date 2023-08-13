@@ -1,5 +1,5 @@
 import {component$, useSignal, useVisibleTask$} from '@builder.io/qwik';
-const backgrounds = import.meta.glob<string>('../assets/img/backgrounds/*.jpg', { import: 'default', eager: true });
+//const backgrounds = import.meta.glob<string>('../assets/img/backgrounds/*.jpg', { import: 'default', eager: true });
 
 export const Background = component$(() => {
   const background = useSignal<string | null>(null);
