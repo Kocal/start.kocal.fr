@@ -4,9 +4,24 @@ const backgrounds = import.meta.glob<string>('../assets/img/backgrounds/*.jpg', 
 export const Background = component$(() => {
   const background = useSignal<string | null>(null);
 
+  useVisibleTask$(() => {
+    console.log('1st visible');
+  })
+
+  useVisibleTask$(async () => {
+    console.log('2nd visible async');
+  })
+
+  useVisibleTask$(async () => {
+    console.log('3rd visible async document-ready');
+  }, {
+    strategy: 'document-ready'
+  })
+
   useVisibleTask$(async () => {
     console.log(backgrounds);
-    background.value = Object.values(backgrounds)[0];
+    console.log(Object.values(backgrounds));
+    console.log(Object.values(backgrounds)[0]);
   }, {
     strategy: 'document-ready'
   });
