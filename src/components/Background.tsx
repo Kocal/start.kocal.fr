@@ -7,13 +7,15 @@ interface BackgroundProps {
 
 export const Background = component$<BackgroundProps>(({ background }) => {
   return (
-    <div
-      class="h-full w-full fixed -z-2 bg-cover bg-center group-hover:blur group-hover:scale-105 transition duration-500"
-      style={
-        background.value ? {
-            backgroundImage: `url(${background.value})`,
-        } : {}
-      }
+    <img
+      src={background.value}
+      alt=""
+      role="presentation"
+      class="h-full w-full fixed -z-2 object-cover object-center group-hover:blur group-hover:scale-105 transition duration-500"
+      loading="eager"
+      decoding="async"
+      // @ts-expect-error The `fetchpriority` attribute is not yet supported.
+      fetchpriority="high"
     />
   );
 });
