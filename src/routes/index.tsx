@@ -1,26 +1,24 @@
-import { component$, useSignal, useVisibleTask$ } from '@builder.io/qwik';
+import { component$, useSignal } from '@builder.io/qwik';
 import shortcuts from '~/shortcuts.json';
 import { List, ListItem, ListTitle } from '~/components/List';
 import { Background } from '~/components/Background';
 import { Overlay } from '~/components/Overlay';
 import type { Background as BackgroundType } from 'virtual:app-backgrounds';
 import { getRandomBackground } from 'virtual:app-backgrounds';
+import { isBrowser } from '@builder.io/qwik/build';
 
 export default component$(() => {
   const randomBackground = useSignal<BackgroundType | null>(null);
 
-  useVisibleTask$(
-    () => {
-      console.log(getRandomBackground());
-    },
-    {
-      strategy: 'document-ready',
-    }
-  );
+ if (isBrowser) {
+   console.log('Browser');
+   console.log('randomBackground signal', randomBackground);
+   console.log('getRandomBackground', getRandomBackground());
+ }
 
   return (
     <div class="w-screen h-screen flex flex-wrap items-center justify-center font-sans leading-relaxed group">
-      <Background background={randomBackground} />
+      {randomBackground.value !== null ? <Background background={randomBackground.value} /> : null}
       <Overlay />
 
       {shortcuts.map(({ title, links }) => {
