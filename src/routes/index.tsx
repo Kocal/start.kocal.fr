@@ -1,25 +1,15 @@
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
+import { routeLoader$ } from '@builder.io/qwik-city';
 import shortcuts from '~/shortcuts.json';
 import { List, ListItem, ListTitle } from '~/components/List';
 import { Background } from '~/components/Background';
 import { Overlay } from '~/components/Overlay';
-import { routeLoader$ } from '@builder.io/qwik-city';
+import type { Background as BackgroundType } from 'virtual:app-backgrounds';
+import { backgrounds } from 'virtual:app-backgrounds';
 
-const backgrounds = import.meta.glob<string>('../../public/assets/backgrounds/*.jpg', {
-  import: 'default',
-  eager: true,
-});
-
-export const useRandomBackground = routeLoader$(async () => {
-  const backgroundsPaths = Object.keys(backgrounds);
-  const randomBackgroundPath = backgroundsPaths[Math.floor(Math.random() * backgroundsPaths.length)];
-
-  return {
-    src: randomBackgroundPath.replace(/^(\.\.\/)*public/, ''),
-    // width: 1920,
-    // height: 1080,
-  };
+export const useRandomBackground = routeLoader$(async (): Promise<BackgroundType> => {
+  return backgrounds[Math.floor(Math.random() * backgrounds.length)];
 });
 
 export default component$(() => {
