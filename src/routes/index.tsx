@@ -4,14 +4,12 @@ import { List, ListItem, ListTitle } from '~/components/List';
 import { Background } from '~/components/Background';
 import { Overlay } from '~/components/Overlay';
 import type { Background as BackgroundType } from 'virtual:app-backgrounds';
-import { backgrounds } from 'virtual:app-backgrounds';
 
 export default component$(() => {
   const randomBackground = useSignal<BackgroundType | null>(null);
 
   useVisibleTask$(function() {
     console.log('visible');
-    console.log(backgrounds);
   })
 
   return (
