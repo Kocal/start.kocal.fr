@@ -12,10 +12,14 @@ const backgrounds = import.meta.glob<string>('../../public/assets/backgrounds/*.
 });
 
 export const useRandomBackground = routeLoader$(async () => {
-  const backgroundsPaths = Object.keys(backgrounds).map((path) => path.replace(/^(\.\.\/)*public/, ''));
-  const randomBackgroundIndex = Math.floor(Math.random() * backgroundsPaths.length);
+  const backgroundsPaths = Object.keys(backgrounds);
+  const randomBackgroundPath = backgroundsPaths[Math.floor(Math.random() * backgroundsPaths.length)];
 
-  return backgroundsPaths[randomBackgroundIndex];
+  return {
+    src: randomBackgroundPath.replace(/^(\.\.\/)*public/, ''),
+    // width: 1920,
+    // height: 1080,
+  };
 });
 
 export default component$(() => {
@@ -52,7 +56,7 @@ export const head: DocumentHead = ({ resolveValue }) => {
       {
         rel: 'preload',
         as: 'image',
-        href: background,
+        href: background.src,
       },
     ],
   };
