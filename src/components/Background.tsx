@@ -2,7 +2,7 @@ import type { Signal } from '@builder.io/qwik';
 import { component$ } from '@builder.io/qwik';
 
 interface BackgroundProps {
-  background: Signal<{
+  background: Signal<null|{
     src: string;
     width: number;
     height: number;
@@ -11,6 +11,7 @@ interface BackgroundProps {
 
 export const Background = component$<BackgroundProps>(({ background }) => {
   return (
+    background.value === null ? null :
     <img
       src={background.value.src}
       width={background.value.width}

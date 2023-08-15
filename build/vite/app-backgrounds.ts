@@ -37,7 +37,11 @@ export function appBackgroundsPlugin({
           };
         }));
 
-        return `export const backgrounds = ${JSON.stringify(backgrounds)};`
+        return `export const backgrounds = ${JSON.stringify(backgrounds)};
+        
+        export function getRandomBackground() {
+          return backgrounds[Math.floor(Math.random() * backgrounds.length)];
+        }`;
       }
     }
   }

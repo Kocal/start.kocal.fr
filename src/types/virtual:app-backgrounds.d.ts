@@ -6,4 +6,6 @@ declare module 'virtual:app-backgrounds' {
   }
 
   export const backgrounds: Background[];
+
+  export function getRandomBackground(): Background;
 }
