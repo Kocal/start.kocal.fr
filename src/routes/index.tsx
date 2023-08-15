@@ -7,13 +7,16 @@ import type { Background as BackgroundType } from 'virtual:app-backgrounds';
 import { getRandomBackground } from 'virtual:app-backgrounds';
 
 export default component$(() => {
-  const randomBackground = useSignal<BackgroundType|null>(null);
+  const randomBackground = useSignal<BackgroundType | null>(null);
 
-  useVisibleTask$(() => {
-    randomBackground.value = getRandomBackground();
-  }, {
-    strategy: 'document-ready',
-  })
+  useVisibleTask$(
+    () => {
+      randomBackground.value = getRandomBackground();
+    },
+    {
+      strategy: 'document-ready',
+    }
+  );
 
   return (
     <div class="w-screen h-screen flex flex-wrap items-center justify-center font-sans leading-relaxed group">
