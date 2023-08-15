@@ -1,4 +1,4 @@
-import { component$, useSignal } from '@builder.io/qwik';
+import { component$, useSignal, useVisibleTask$ } from '@builder.io/qwik';
 import shortcuts from '~/shortcuts.json';
 import { List, ListItem, ListTitle } from '~/components/List';
 import { Background } from '~/components/Background';
@@ -8,6 +8,11 @@ import { getRandomBackground } from 'virtual:app-backgrounds';
 
 export default component$(() => {
   const randomBackground = useSignal<BackgroundType | null>(getRandomBackground);
+
+  useVisibleTask$(() => {
+    console.log('useVisibleTask$');
+    randomBackground.value = getRandomBackground();
+  });
 
   return (
     <div class="w-screen h-screen flex flex-wrap items-center justify-center font-sans leading-relaxed group">
