@@ -11,7 +11,7 @@ export default component$(() => {
 
   useVisibleTask$(
     () => {
-      randomBackground.value = getRandomBackground();
+      console.log(getRandomBackground());
     },
     {
       strategy: 'document-ready',
