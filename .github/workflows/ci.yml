@@ -30,6 +30,4 @@ jobs:
 
       - run: pnpm run lint
 
-      - run: pnpm run build.types
-
       - run: pnpm run build
