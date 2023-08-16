@@ -1,14 +1,28 @@
 import type { QwikIntrinsicElements } from '@builder.io/qwik';
 import { component$, Slot } from '@builder.io/qwik';
+import { css } from '~/styled-system/css';
 
 export const List = component$(() => (
-  <div class="min-w-48 m-2 shadow-2xl bg-white text-center">
+  <div
+    class={css({
+      width: '48',
+      margin: '2',
+      boxShadow: 'md',
+      backgroundColor: 'white',
+      textAlign: 'center',
+    })}
+  >
     <Slot />
   </div>
 ));
 
 export const ListTitle = component$(() => (
-  <div class="font-bold p-2">
+  <div
+    class={css({
+      fontWeight: 'bold',
+      padding: '2',
+    })}
+  >
     <Slot />
   </div>
 ));
@@ -22,7 +36,18 @@ export const ListItem = component$(<C extends keyof QwikIntrinsicElements>(props
 
   return (
     // @ts-expect-error IDK why this is failing
-    <Component class="block p-2 no-underline text-gray-800 hover:bg-gray-300 transition-colors duration-300" {...props}>
+    <Component
+      class={css({
+        display: 'block',
+        padding: '2',
+        color: 'gray.800',
+        transition: 'background-color 0.3s ease-in-out',
+        '&:hover': {
+          backgroundColor: 'gray.300',
+        },
+      })}
+      {...props}
+    >
       <Slot />
     </Component>
   );
