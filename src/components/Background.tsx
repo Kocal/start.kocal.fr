@@ -18,8 +18,8 @@ export const Background = component$<BackgroundProps>(({ background }) => {
       alt=""
       role="presentation"
       class={css({
-        width: '100%',
-        height: '100%',
+        width: 'full',
+        height: 'full',
         objectFit: 'cover',
         objectPosition: 'center',
         userSelect: 'none',
@@ -27,7 +27,7 @@ export const Background = component$<BackgroundProps>(({ background }) => {
         filter: 'blur(7px)',
         transform: 'scale(1.05) rotate(-1deg)',
         opacity: 0.65,
-        '&:hover': {
+        _groupHover: {
           opacity: 1,
           filter: 'blur(0)',
           transform: 'scale(1) rotate(0deg)',

@@ -11,12 +11,12 @@ export default component$(() => {
 
   return (
     <div
-      class={css({
+      class={['group', css({
         width: 'screen',
         height: 'screen',
         fontFamily: 'sans-serif',
         backgroundColor: '#000',
-      })}
+      })]}
     >
       {randomBackground.value !== null ? <Background background={randomBackground.value} /> : null}
 
